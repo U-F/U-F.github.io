@@ -1,22 +1,22 @@
 .wrap
 {
-    width: 320px;
-    height: 192px;
+    width: 512px;
+    height: 384px;
     padding: 0;
     overflow: hidden;
 }
 
 .frame
 {
-    width: 1280px;
+    width: 1024px;
     height: 786px;
     border: 0;
 
-    -ms-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -o-transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    transform: scale(0.25);
+    -ms-transform: scale(0.50);
+    -moz-transform: scale(0.50);
+    -o-transform: scale(0.50);
+    -webkit-transform: scale(0.50);
+    transform: scale(0.50);
 
     -ms-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
