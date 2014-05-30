@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views
+END
+talk.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/talk.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/__init__.py
+END
+cal.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/cal.py
+END
+profile.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/profile.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/tests.py
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/main.py
+END
+search.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/search.py
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/19/trunk/examples/django-apps/project/experts/views/common.py
+END

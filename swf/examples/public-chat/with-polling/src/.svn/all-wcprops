@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/trunk/examples/public-chat/with-polling/src
+END
+index.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/17/trunk/examples/public-chat/with-polling/src/index.yaml
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/17/trunk/examples/public-chat/with-polling/src/index.html
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/17/trunk/examples/public-chat/with-polling/src/main.py
+END
+app.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/trunk/examples/public-chat/with-polling/src/app.yaml
+END

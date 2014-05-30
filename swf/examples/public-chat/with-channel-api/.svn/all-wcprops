@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/42/trunk/examples/public-chat/with-channel-api
+END
+.pydevproject
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/23/trunk/examples/public-chat/with-channel-api/.pydevproject
+END
+app.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/42/trunk/examples/public-chat/with-channel-api/app.yaml
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/23/trunk/examples/public-chat/with-channel-api/TODO.txt
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/22/trunk/examples/public-chat/with-channel-api/.project
+END
+index.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/17/trunk/examples/public-chat/with-channel-api/index.yaml
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/42/trunk/examples/public-chat/with-channel-api/index.html
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/17/trunk/examples/public-chat/with-channel-api/main.py
+END

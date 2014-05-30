@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/base.html
+END
+base_site.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/base_site.html
+END

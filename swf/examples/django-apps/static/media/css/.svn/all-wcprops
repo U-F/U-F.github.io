@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css
+END
+forms.css
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/forms.css
+END
+widgets.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/widgets.css
+END
+dashboard.css
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/dashboard.css
+END
+login.css
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/login.css
+END
+base.css
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/base.css
+END
+ie.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/ie.css
+END
+rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/rtl.css
+END
+rating.css
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/rating.css
+END
+changelists.css
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/css/changelists.css
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts
+END
+base_site.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/base_site.html
+END
+calendaredit.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/calendaredit.html
+END
+profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/profile.html
+END
+calendarframe.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/calendarframe.html
+END
+base_frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/base_frame.html
+END
+search.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/search.html
+END
+myprofile.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/myprofile.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/index.html
+END
+calendar.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/calendar.html
+END
+talk.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/20/trunk/examples/django-apps/project/templates/experts/talk.html
+END

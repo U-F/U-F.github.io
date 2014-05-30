@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js
+END
+SelectBox.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/SelectBox.js
+END
+core.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/core.js
+END
+timeparse.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/timeparse.js
+END
+actions.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/actions.js
+END
+prepopulate.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/prepopulate.js
+END
+jquery.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/jquery.min.js
+END
+inlines.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/inlines.js
+END
+collapse.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/collapse.js
+END
+LICENSE-JQUERY.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/LICENSE-JQUERY.txt
+END
+SelectFilter2.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/SelectFilter2.js
+END
+compress.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/compress.py
+END
+getElementsBySelector.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/getElementsBySelector.js
+END
+dateparse.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/dateparse.js
+END
+calendar.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/calendar.js
+END
+urlify.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/urlify.js
+END
+jquery.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/jquery.js
+END
+jquery.init.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/jquery.init.js
+END
+actions.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/actions.min.js
+END
+prepopulate.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/prepopulate.min.js
+END
+inlines.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/inlines.min.js
+END
+collapse.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/20/trunk/examples/django-apps/static/media/js/collapse.min.js
+END
