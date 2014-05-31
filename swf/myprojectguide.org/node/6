@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <title>Project Ideas on Multimedia Networking | Gurukul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/color/garland-a725207e/style.css?w" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?w" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Gurukul My Project Guide"><img src="/sites/default/files/garland_logo.png" alt="Gurukul My Project Guide" id="logo" /><span>Gurukul</span> My Project Guide</a></h1>        </div>
+
+                                                    
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a> › <a href="/forum">Forums</a> › <a href="/forum/6">Computer Science Projects</a></div>                              <h2>Project Ideas on Multimedia Networking</h2>                                                  <div class="clear-block">
+            <div id="node-6" class="node">
+
+
+
+      <span class="submitted">Thu, 04/23/2009 - 10:04 — mamta</span>
+  
+  <div class="content clear-block">
+    <p>Post your project ideas on multimedia networking such as VoIP, P2P, video processing, audio echo cancellation, etc.</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="/node/16" class="topic-previous" title="Go to previous forum topic">‹ Project ideas on web systems</a>
+              <a href="/node/17" class="topic-next" title="Go to next forum topic">Project ideas in distributed systems and networks ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/forum/6" rel="tag" title="Ideas related to computer science research projects">Computer Science Projects</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments"><a id="comment-101"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 12/04/2011 - 06:49 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-101" class="active">Platform for Multimedia Story Development</a></h3>
+
+    <div class="content">
+      <p>Create a web based platform that allows a story writer to easily create stories (fiction) using multimedia tools. Such immersive stories will use existing social network, telephone network and web sites to create supplementary data for the story in real-time while the story is being followed. A new programming language (perhaps XML-based) should allow defining the hyperlinks between different parts of the story along with temporal data, e.g., when a link becomes active, or a phone number is available to be called, or blog post is added to supplement the main story. Embedding existing graphics, text, video, sound, as well as real-time communication primitives should be enabled using drag-and-drop user interface.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-100"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 11/08/2011 - 00:36 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-100" class="active">Service to report potential SIP interop problems</a></h3>
+
+    <div class="content">
+      <p>Build a server/hosted service to which any SIP user agent or proxy can send SIP INVITE, MESSAGE, REGISTER or other requests, and it responds with the potential problems in the SIP request from compatibility and interoperability point of view. There are many little details that are implemented differently than what the specification requires. For example, some implementations choke if the SIP message contains line termination of LF instead of CRLF, space after semi-colon in parameters, missing new line after SDP especially in TCP mode, urn instead of SIP URI in request URI or To headers and so on. RFC 4475 defines various torture tests for SIP parsers and there are automatic verification tools for torture tests but are usually not used by many SIP implementers mostly because of the overhead of doing such tasks and the overhead of fixing the new found bugs. The specifications recommend that the sender usually send the outgoing message in canonical forms but be able to accept incoming messages with torture tests. The goal of this project is NOT to do torture tests, but to identify items in the SIP message which are not in canonical form and may cause interoperability issues with other vendors that are non-compliant. Even if your SIP implementation is compliant with the specification, you want to inter-operate with other vendors, and this project will help you identify potential problems in your SIP message formater (not the parser). </p>
+<p>When the server receives a SIP request, it parses the request identifying all non-conventional and non-canonical syntax in the message, and responds back with an error response, preferably 400 Bad Request, with message body containing a list of potential problems as warning and errors. Unlike having a network sniffer application that uses pcap or parses some log data, this application doesn't require installing anything on the user's premises. The end user just points its user agent or server at our server to make a SIP request to our server/service, and gets a detailed list of potential interoperability problems in the response. If the end user has a trace of the message, she can use the standard network client, nc, on Unix machines to send the request, or our web interface and get the list of potential problems. The server should accept the SIP request on both TCP and UDP.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-98"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 09/08/2011 - 00:14 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-98" class="active">Add H.264 video in SIP-RTMP gateway</a></h3>
+
+    <div class="content">
+      <p>The existing <a href="http://code.google.com/p/siprtmp">SIP-RTMP gateway</a> as part of the <a href="http://code.google.com/p/rtmplite">RTMPlite</a> project enables interoperability between Web/Flash Player and standard SIP endpoints for VoIP such as using Speex and G.711. Traditionally the proprietary nature of Flash's camera captured video (using Sorenson codec) disallowed interoperability with standard SIP endpoint without a video transcoding, because existing SIP video endpoints support standards such as H.261, H.263, H.264. With Flash Player version 11 (beta) containing native H.264 encoding for camera captured video, it is now possible to enable video path translation in SIP-RTMP gateway software. Apparently Wowza and Flashphone already can do this. The task of this project is to enable video path translation between Flash Player 11+ and standards SIP video end points such as Bria and Ekiga that support H.264. Language: Python, C/C++ (understanding).</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-99"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/13/2011 - 00:17 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-99" class="active">Completed</a></h3>
+
+    <div class="content">
+      <p>We have finished video translation in our siprtmp gateway. The translation works between Flash Player 11.2 (beta) and Bria 3 (SIP). It also works with Ekiga (SIP) with some workaround. Please see the <a href="https://bugbase.adobe.com/index.cfm?event=bug&amp;id=2991202">Flash Player bug</a> and <a href="http://code.google.com/p/rtmplite/issues/detail?id=49">issue 49</a> for details on what was blocking it for a long time.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-93"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 07/10/2011 - 05:09 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-93" class="active">A global SIP-based communication service</a></h3>
+
+    <div class="content">
+      <p>Many major vendors have large investment in SIP-based communication but have built closed walled gardens of communication systems that work only within their customer base using SIP. For example, a Facetime user cannot connect to other regular SIP network, or Comcast VoIP interconnection is completely hidden from end users. The existing open source software projects such as SER and pjsip are being used for building closed systems. Existing public SIP service such as sip2sip.info or iptel.org have a maintenance cost which may prevent them from going to a global scale. Lack of users signing up for these services is another reason. Another problem is that as a user if I sign-up for a SIP account on iptel.org my SIP address will be <a href="mailto:user@iptel.org">user@iptel.org</a>, but I prefer to use my existing email of the form <a href="mailto:kundan10@gmail.com">kundan10@gmail.com</a> as my SIP identity. </p>
+<p>The goal of this project is to build an open and global Internet communication "service" where anyone will be able to connect with any one else without any restriction using SIP and RTC-Web. The service will provide a DHT-backed name service with sample clients implementation for desktop, mobile and browser to connect with each other and to existing SIP networks.</p>
+<p>It will follow a public open source service (POSS) model where the software as well as service is open. Anyone with an email address or phone number will be able to sign-up for an account. The servers will use database/DHT (not RFC 3263) for lookup hence can use any email addresses as a SIP address-of-record (AoR). The servers will be hosted using Amazon cloud, so that based on the demand more servers can be launched easily. </p>
+<p>What is different compared to existing systems? It will be like Skype but based on SIP and Web-RTC standards. Anyone can connect to anyone else, but with open protocols. It will be completely open for developers, end users as well as VoIP providers. Anyone can fix a bug, and this gets updated in the live service after review/testing. Anyone can be part of the service by taking PSTN termination responsibility. It will use your existing email address as your SIP AoR. It will use your existing phone number to forward call to/from. It will integrate both SIP and RTC-web connectivity. It will have open API which developers can build applications and user interfaces for.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-92"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 06/28/2011 - 00:56 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-92" class="active">Online Academic Conference System</a></h3>
+
+    <div class="content">
+      <p>Create an online conference system that allows participants to attend and presenters to present conference sessions on Internet and web. The idea is to have an academic conference with technical program committee, papers, sessions, schedule, etc., but everything online. Attendees do not need to pay for travel. The registration fee can be much less. The system will bring together researchers as well as developers, to discuss things in real-time. The system will archive all presentations including audio and video. </p>
+<p>This is a large project and requires much more mature system than what we have at <a href="https://sites.google.com/site/vvowproject">vvowproject</a> (<a href="http://gardo1.rice.iit.edu/webconf">see demo</a>). In particular, it requires efficient one to many party video conferencing, screen sharing, ability to quickly create new rooms and meeting places for people to catch up during session breaks, reliable PSTN and mobile connectivity for audio, video and presentation for those who do not or can not use PC with browser, and above all robustness and scalability to large number of participants. The project should be built with not-for-profit and public open source service license, where people can contribute to code as well as pay for hosting of servers, organizing of conferences, etc., to be self sustainable.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-91"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 06/13/2011 - 08:24 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-91" class="active">Integrating WebRTC with SIP/RTP</a></h3>
+
+    <div class="content">
+      <p>Build an application that integrated Session Initiation Protocol/Real-time Transport Protocol (SIP/RTP)-based communication and <a href="http://code.google.com/p/webrtc/">Google WebRTC</a> project. The goal is to allow interoperability between a SIP phone and WebRTC application. The gateway can be used as a back-end server or on the client host, e.g., as a plugin or Javascript application, if possible. The WebRTC project keeps the signaling part outside, hence SIP can be used as the signaling part directly in the browser, or in a gateway. As a side project, building a simple SIP user agent that uses WebRTC for media stack will be a good starting point.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-90"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 06/13/2011 - 08:20 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-90" class="active">Gateway between RTMP and WebRTC</a></h3>
+
+    <div class="content">
+      <p>Build a gateway to perform translation between <a href="http://code.google.com/p/flash-videoio">Flash based audio and video</a> using RTMP and <a href="http://code.google.com/p/webrtc/">Google WebRTC</a>. You can use the existing <a href="http://code.google.com/p/rtmplite/">rtmplite</a> project to perform the RTMP side of the processing. The goal is to allow a Flash application to talk to a WebRTC application and vice-versa using this gateway. The user can run the gateway either in the back-end server or on the client host itself, e.g., as a separate application or a browser plugin. Both signaling and media needs to be translated.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-89"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 06/13/2011 - 08:15 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-89" class="active">Python API for webrtc</a></h3>
+
+    <div class="content">
+      <p>Create a Python wrapper API to expose the peer connection, video engine and voice engine related functions of the <a href="http://code.google.com/p/webrtc/">Google WebRTC</a> project. The goal is to allow any Python application to use a general purpose audio and video engine such as to implement a VoIP phone or Internet radio terminal. The external module should be easy to use and preserve existing function names and concepts of WebRTC. For example, a simple multicast Internet audio tool can be created as follows</p>
+<pre>from webrtc import VoiceEngine
+voe = VoiceEngine()
+ch = Channel(voe)
+ch.set_local_receiver(port=1000, multicast="224.1.2.3")
+ch.set_send_destination(port=1000, ip="224.1.2.3")
+ch.start_playout()
+ch.start_receive()
+ch.start_send()
+</pre>          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-65"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/10/2010 - 00:42 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-65" class="active">White-labeled Flash-to-phone</a></h3>
+
+    <div class="content">
+      <p>An earlier project, <a href="http://code.google.com/p/siprtmp/">SIP-RTMP gateway</a>, has a Flash application, VideoPhone.swf, which implements the call control and user interface for a simple web-based video phone. This project should create a white-labeled web-based video phone without any user interface, so that the call control can be done using HTML and Javascript outside the Flash application, and the Flash application is used to just connect to the SIP-RTMP gateway and to handle media. The goal is to allow third-party to change the user interface and build their own call control logic in its web application.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-66"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/10/2010 - 00:44 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-66" class="active">Completed</a></h3>
+
+    <div class="content">
+      <p>This project is completed and closed. The flash-videoio project was used and modified to create a white-labeled Flash-to-phone application. You can find the details in <a href="http://myprojectguide.org/p/flash-videoio/11.html">How to do SIP-based VoIP call?</a></p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-62"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 04/15/2010 - 06:35 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-62" class="active">Digital Video Frame</a></h3>
+
+    <div class="content">
+      <p>Digital video frame is a hardware, similar to digital photo frame, which not only allows you to do slide shows of photos and videos, but also shows your contacts and allows you to do video conferencing with your contacts. Existing video conferencing software have a huge problem of configuration and setup. The goal of your project is to build video conferencing and presence software which is always on, and very very easy to use. Configuration, if any, will be done from web outside the video frame, e.g., setting your contact list or display name. Once the video frame software launches, it displays full screen view with your local mirrored camera view and your contact list containing photos of your contacts. After some time of inactivity, the playlist will start playing. You can configure the playlist from the web interface outside the video frame. The playlist contains photos as well as videos, either statically configured or uploaded, or randomly picked from other sites like Flickr and YouTube. In future this will be extended to support Internet TV or radio style broadcasting of audio and/or video.</p>
+<p>Clicking on a contact list item automatically makes a video call to that user, or if you are already in a call, then invites that user in the existing call. When you receive an incoming invitation, the photo of the caller flashes for some time. Additionally a ringing sound is played if you are not already in a call. When you click on the flashing photo, the call is accepted, or if you are already in a call then the caller joins your call. In the idle state the system will automatically disable your camera after some time of inactivity. You can use the <a href="http://code.google.com/p/videocity">videocity</a> project to get more ideas on how to layout the videos in two-party or multi-party calls.  You can use Flash Player or AIR platform so that you don't have to worry about portable video, camera and sound components -- but using Flash platform is not a requirement. You can use any signaling protocol and web service to allow quick and easy video communication.  The primary goal is ease of use. Language: any, prefer ActionScript, Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-58"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 03/30/2010 - 07:03 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-58" class="active">Shared Content Viewing</a></h3>
+
+    <div class="content">
+      <p>Implement a Flash-based shared content viewing software. A server co-ordinates content timeline and access among multiple participants. It should be possible to perform shared web browsing and shared video viewing using the software such as on YouTube. Try to use an existing protocol such as XMPP or HTTP between client and server. If multiple people are in the sharing context, everyone views the same web page. A mouse click or keyboard input on one persons browser is propagated to others, and same action is taken on all browsers. It should be possible to configure a moderator -- in public share everyone is a moderator, whereas in private share only the initiator of the share can promote others as moderator. A public share should be accessible by anyone whereas private share only on invitation. Language: Python, ActionScript, JavaScript, HTML</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-43"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Sat, 12/05/2009 - 11:20 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-43" class="active">RESTful interface for SIP application service</a></h3>
+
+    <div class="content">
+      <p>Build a RESTful interface to a SIP application server so that one can access SIP services from web clients. For example, "/login" could represent a list of currently logged in users, and doing a "GET /login/{email}" gets the contact information of a user identified by that email, "PUT /login/{email}" does a registration with the SIP system, and "DELETE /login/{email} does un-registration. Similarly, "/user/{email}" can represent the user profile and "/user/{email}/messages" could represent user's voice/video messages. Anyone could do a "POST /user/{email}/messages" but only the owner could retrieve his messages using "GET /user/{email}/messages". Finally, "/call" could represent a list of currently active or scheduled conferences, where you can join a call using "POST /call/{call-id}" with your email and session information, disconnect from the call using "DELETE /call/{call-id}/{your-participant-id}". As a first step you will build  simple SIP application server with user profile, registration, messages and conference functions. Then you will define and implement various RESTful APIs with authentication and security so that the server can also be accessed from a browser or web clients. Finally, you will use a SIP-RTMP gateway to allow a Flash client to join the SIP conference. You will need to extend the RESTful architecture to allow persistent client-server connection and callback event notifications from server-to-client. </p>
+<p>I have more ideas on how the project can be done -- please contact me if interested. You can use the SIP implementation of the <a href="http://code.google.com/p/p2p-sip">p2p-sip</a> project, REST server tools of the <a href="http://code.google.com/p/restlite">restlite</a> project and SIP-RTMP gateway of the <a href="http://code.google.com/p/siprtmp">siprtmp</a> project. For additional motivation on this project please see my blog article on <a href="http://p2p-sip.blogspot.com/2009/11/rest-and-sip.html">REST and SIP</a>. Language: Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-35"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/01/2009 - 00:40 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-35" class="active">RTSP-RTMP translation</a></h3>
+
+    <div class="content">
+      <p>These are two competing streaming protocols on the Internet: RTSP and RTMP. Instead of having a gateway that translates between the two protocols, it might be better to build an integrated client or integrated server -- you can record using RTMP and view using Quicktime (RTSP), or you can use the same client to access real-time streams from RTMP or RTSP. Since RTMP incorporates RPC along with streaming control and media path, whereas RTSP is just streaming control, a complete translation of all the functions may not be feasible. Use: <a href="http://code.google.com/p/rtmplite">rtmplite</a>, <a href="http://code.google.com/p/p2p-sip">p2p-sip</a>. Language: Python (server), ActionScript (client)</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-26"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 11/24/2009 - 23:55 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-26" class="active">Video conferencing in LAN using Flash Player</a></h3>
+
+    <div class="content">
+      <p>The project builds in three stages:</p>
+<p>(1) Build a video loopback for Flash Player for capturing camera and displaying local video in high quality using Flash Player. You can start with the existing software <a href="http://code.google.com/p/flash-mirror">mirror</a> code, change it to use compressed loopback of camera, and tune the quality and bandwidth of the camera to keep high quality within 100 Mbps bandwidth requirement. Language: ActionScript.</p>
+<p>(2) Incorporate the client-server connection using the <a href="http://code.google.com/p/rtmplite">rtmplite</a> software to host a Flash video server on local host. Your captured video will be sent to the server and your display will play the video stream received from the server. Language: ActionScript, Python</p>
+<p>(3) Experiment with two users connected to the server. You just need to support one video room or conference, where everyone connected to the server are in the same conference. You may want to use the ContainerBox of the <a href="http://code.google.com/p/videocity">videocity</a> project, or may display multiple video as you like. Language: ActionScript</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-20"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 02:02 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-20" class="active">siph323: SIP-H.323 signaling gateway</a></h3>
+
+    <div class="content">
+      <p>Implement open source SIP-H.323 interworking function [<a href="http://www.cs.columbia.edu/~library/TR-repository/reports/reports-2000/cucs-015-00.pdf">paper</a>, <a href="http://www.cs.columbia.edu/~kns10/publication/draft-singh-sip-h323-01.pdf">internet-draft</a>, <a href="http://kundansingh.com/talks/von_jan00.ppt">slides</a>] in Python. I have implemented a closed source siph323 software in C/C++ before. The goal of this new project is to first implement ASN.1 PER in Python, then add H.323 implementation, and finally the interworking function. This is a very involved project because of the complexity of H.323 and unavailability of any Python based H.323 library. I recommend doing it in a group or 2-3 students. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-19"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 01:57 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-19" class="active">sippeer: P2P telephony over SIP</a></h3>
+
+    <div class="content">
+      <p>Implement open source P2P-over-SIP approach [<a href="http://kundansingh.com/papers/sip-p2p-short.pdf">paper</a>, <a href="http://www1.cs.columbia.edu/~kns10/publication/sip-p2p-design.pdf">detailed</a>, <a href="http://kundansingh.com/talks/p2psip-panasonic.ppt">slide</a>] to P2P-SIP in Python. I have implemented a closed source sippeer software before in C++ with nice <a href="http://www.cs.columbia.edu/~kns10/software/sippeerapi">API</a>. The goal of this new project is to use the programmable server approach to implement the pseudo-code presented in the paper and implement a P2P-over-SIP adaptor. Do not worry about NAT and firewall traversal initially. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-18"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 01:48 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-18" class="active">sipum: SIP and RTSP based voice/video messaging server</a></h3>
+
+    <div class="content">
+      <p>Implement open source voice/video messaging server using SIP and RTSP [<a href="http://kundansingh.com/papers/vmail.pdf">paper</a>, <a href="http://kundansingh.com/talks/irt2.ppt">slides</a>] in Python. I have implemented a closed source <a href="http://www1.cs.columbia.edu/IRT/cinema/doc/sipum.html">sipum</a> project before in C++ with nice <a href="http://www.cs.columbia.edu/~kns10/software/sipumapi">API</a>. The goal of this new project is to first implement a simple RTSP client and server,  then use the SIP and RTP modules from the <a href="http://39peers.net">p2p-sip</a> project to implement sipum, and finally provide a web interface to access the voice/video messages. You do not need to record in specific formats like snd or mov but can just dump the RTP/RTCP packets in a file. You should allow adding support for new codecs or transcoders so that even if recording was done in G.711, you can listen to message in Speex, for example. Later you can integrate this with <a href="http://code.google.com/p/siprtmp/">siprtmp</a> to allow access from Flash applications as well as <a href="http://code.google.com/p/videocity/">videocity</a>. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-17"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 01:36 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-17" class="active">sipconf: SIP/RTP-based conferencing server</a></h3>
+
+    <div class="content">
+      <p>Implement an open source SIP/RTP-based multiparty multi-platform conferencing server [<a href="http://kundansingh.com/papers/sipconf.pdf">paper</a>, <a href="http://kundansingh.com/talks/conferencing.pdf">slides</a>] in Python. I have implemented it before as a closed source <a href="http://www1.cs.columbia.edu/IRT/cinema/doc/sipconf.html">sipconf</a> software with nice <a href="http://www.cs.columbia.edu/~kns10/software/sipconfapi">API</a> in C++. The goal of this new project is to utilize the programmable server approach, keep the codecs and transcoders as pluggable, support video, and implement recording and playback of conferences. The project should use the SIP and RTP library from the 39 peers <a href="http://39peers.net">p2p-sip</a> project. The next step will be to merge SIP and Flash conferencing using the <a href="http://code.google.com/p/siprtmp/">siprtmp</a> software. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-16"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 01:27 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-16" class="active">sipvxml: SIP-based VoiceXML browser</a></h3>
+
+    <div class="content">
+      <p>Implement open source SIP VoiceXML browser [<a href="http://kundansingh.com/papers/sipvxml.pdf">paper</a>, <a href="http://kundansingh.com/talks/vxml_02.ppt">slides</a>] in Python. I have implemented it before in C++ as <a href="http://www.cs.columbia.edu/~kns10/software/sipvxml/sipvxml.html">sipvxml</a> software using a nice <a href="http://www.cs.columbia.edu/~kns10/software/sipvxmlapi/">API</a>. Two problems with the previous implementation: it was closed source, and used VoiceXML version 1.0. This new project requires implementation of VoiceXML <a href="http://www.w3.org/TR/voicexml21/">2.1</a> in Python using the SIP libraries from the 39 peers <a href="http://39peers.net">p2p-sip</a> project. You can use any available text-to-speech library or keep it open pluggable. The goal is to implement language feature and state machine for VoiceXML. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-4"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 05/06/2009 - 02:04 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-4" class="active">P2P Audio Tool on Windows and/or Mac</a></h3>
+
+    <div class="content">
+      <p>Implement a audio tool on Windows and/or Mac OS X that intercepts audio captured and played in the device, and allows you to share it with others, your friends, contacts, etc. The idea is to do transparently implement audio conference and shared listening and chatting without being specific to a tool such as Skype or MSN. Thus, if you are listening to some music and share your speaker device with a friend, he will be able to listen to the same music. If you share your audio device with your friend, he will be able to talk to you using audio conferencing. Use RTP and SIP to support the distributed signaling and media transport. The tool should have option to allow music versus spoken audio, and graphical user interface to allow connecting devices among each other and with friends. Further extend it to allow sharing camera device as well as display device (i.e., part of your monitor display). Language: C/C++. Some background in audio will be helpful.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-3"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 05/06/2009 - 01:55 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-3" class="active">Video Room Firefox Extension </a></h3>
+
+    <div class="content">
+      <p>Implement a video room extension to Firefox using exiting video room services on the Internet. The video room will allow you to automatically video chat with other people browsing the same site or web page. For example, if two people are watching a particular news item and have this extension installed, they will be placed in a video room where they can video chat with each other. Further enhance the experience on other browsers (IE, Safari?), using existing protocols (SIP, Jabber) and using imported contact list from visited web site (e.g., when visiting Linked-In web site, you can automatically video chat with any linked-in profile or friend). Language: JavaScript, and others.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-2"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 05/06/2009 - 01:47 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-2" class="active">Flash to SIP calls</a></h3>
+
+    <div class="content">
+      <p>Using Adobe's Flash Player and <a href="http://39peers.net">Python SIP</a> code, implement a PC-to-phone calling system which should allow both inbound and outbound calls between web browser and SIP. I have some ideas and preliminary code. The ActionScript library will allow any third-party to build user interface for the web-based soft-phone. Language: Python, ActionScript</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-21"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/04/2009 - 02:06 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-21" class="active">Completed</a></h3>
+
+    <div class="content">
+      <p>The project is completed and closed. You can try out or see the documentation and source code at <a href="http://code.google.com/p/siprtmp/">SIP-RTMP gateway</a> project page.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-5"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 05/12/2009 - 12:09 — mamta</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-5" class="active">Flash RTMP server in Python</a></h3>
+
+    <div class="content">
+      <p>My project named <a href="http://code.google.com/p/rtmplite/">Flash RTMP server in Python</a>  hosted at Google Code can be used to receive connections and media from the Flash Player application.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-1"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 05/06/2009 - 01:37 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/6#comment-1" class="active">P2P-SIP in Python</a></h3>
+
+    <div class="content">
+      <p>Implement the current version of IETF P2P-SIP WG <a href="http://tools.ietf.org/html/draft-ietf-p2psip-base-02">internet-draft</a>. You may reuse the core p2p, dht and rfc3261 modules of the <a href="http://39peers.net">39 peers</a> project. The goal is to implement the core functions that allows incorporating external DHT algorithm, authentication as well as transport. I have a few suggestions to simplify the draft and hence the implementation. Language: Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div>          </div>
+                    <div id="footer">&copy; 2008-2012, Kundan Singh, myprojectguide.org</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node/6?destination=node%2F6"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-0fa19fa7e45f7e1bc1e030330237aff4" value="form-0fa19fa7e45f7e1bc1e030330237aff4"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2>Navigation</h2>
+
+  <div class="content"><ul class="menu"><li class="expanded last"><a href="/book" title="Explore and contribute to student projects">Projects</a><ul class="menu"><li class="leaf first"><a href="/forum" title="">Discussion Forum</a></li>
+<li class="leaf"><a href="/node/8" title="Bookmarks">Bookmarks</a></li>
+<li class="leaf"><a href="/node/7" title="Past Projects at Columbia University">Past Projects</a></li>
+<li class="leaf last"><a href="/node/170" title="Project Implementation Reports">Project Reports</a></li>
+</ul></li>
+</ul></div>
+</div>
+<div id="block-forum-0" class="clear-block block block-forum">
+
+  <h2>Active forum topics</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16" title="36 comments">Project ideas on web systems</a></li>
+<li><a href="/node/6" title="27 comments" class="active">Project Ideas on Multimedia Networking</a></li>
+<li class="last"><a href="/node/17" title="8 comments">Project ideas in distributed systems and networks</a></li>
+</ul></div><div class="more-link"><a href="/forum" title="Read the latest forum topics.">more</a></div></div>
+</div>
+<div id="block-comment-0" class="clear-block block block-comment">
+
+  <h2>Recent comments</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16#comment-107">Completed</a><br />2 years 8 weeks ago</li>
+<li><a href="/node/16#comment-106">Extension VideoIO to include WebRTC</a><br />1 year 44 weeks ago</li>
+<li><a href="/node/16#comment-105">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-104">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-103">SIP in Javascript</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/16#comment-102">Bring full socket API to web applications</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/6#comment-101" class="active">Platform for Multimedia Story Development</a><br />2 years 25 weeks ago</li>
+<li><a href="/node/6#comment-100" class="active">Service to report potential SIP interop problems</a><br />2 years 29 weeks ago</li>
+<li><a href="/node/6#comment-99" class="active">Completed</a><br />2 years 24 weeks ago</li>
+<li class="last"><a href="/node/6#comment-98" class="active">Add H.264 video in SIP-RTMP gateway</a><br />2 years 38 weeks ago</li>
+</ul></div></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

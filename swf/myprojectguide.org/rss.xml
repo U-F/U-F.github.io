@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://myprojectguide.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Gurukul</title>
+ <link>http://myprojectguide.org</link>
+ <description>&quot;If you want to build a ship, don&#039;t drum up people to collect wood and don&#039;t assign them tasks and work, but rather teach them to long for the endless immensity of the sea.&quot; - Antoine de Saint Exupéry</description>
+ <language>en</language>
+<item>
+ <title>What are Research Projects?</title>
+ <link>http://myprojectguide.org/node/9</link>
+ <description>&lt;p&gt;For the purpose of this site, we define a &lt;i&gt;research project&lt;/i&gt; as a project done as part of a course taken by an undergraduate or graduate student for academic credit or pay and the project typically lasts for one academic semester. In some cases, the project may be extended to multiple semesters, and/or form the Masters or Bachelors thesis for the student.  A typically research project starts with the problem definition, study of existing solutions, enhancements to accomplish something new, and presenting the results in the form of a project report. This article describes the various aspects of a software research project.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://myprojectguide.org/node/9&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 26 Apr 2009 21:19:20 +0000</pubDate>
+ <dc:creator>Kundan Singh</dc:creator>
+ <guid isPermaLink="false">9 at http://myprojectguide.org</guid>
+</item>
+<item>
+ <title>Getting Started!</title>
+ <link>http://myprojectguide.org/node/5</link>
+ <description>&lt;p&gt;If you have a project idea, &lt;a href=&quot;/node/163&quot;&gt;sign-up&lt;/a&gt; for an account and post your idea. If you are a student looking for a project idea, search for idea here and &lt;a href=&quot;/node/163&quot;&gt;sign-up&lt;/a&gt; as a project student. Use the discussion forum to view existing project ideas on &lt;a href=&quot;/node/6&quot;&gt;multimedia networking&lt;/a&gt;, &lt;a href=&quot;/node/16&quot;&gt;web systems&lt;/a&gt; and &lt;a href=&quot;/node/17&quot;&gt;distributed systems&lt;/a&gt;, and to connect with other students and mentors.&lt;/p&gt;
+</description>
+ <pubDate>Thu, 23 Apr 2009 04:26:03 +0000</pubDate>
+ <dc:creator>Kundan Singh</dc:creator>
+ <guid isPermaLink="false">5 at http://myprojectguide.org</guid>
+</item>
+<item>
+ <title>Student Developer Community</title>
+ <link>http://myprojectguide.org/node/1</link>
+ <description>&lt;p&gt;The goal is to build a developers community of students doing or have done software academic projects during their studies. The community consists of volunteers with specific expertise who are willing to contribute their time in educating and directing small semester-wide academic projects, and volunteer students who actually do the project as part of their graduate or undergrad studies. &lt;/p&gt;
+&lt;p&gt;My Project Guide is intended for graduate and under-grad students in computer science who are doing or want to do software research projects. The web site provides comprehensive background and assistance for doing such projects. It also connects the students with prospective mentors and experts in the project area.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://myprojectguide.org/node/1&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Wed, 01 Oct 2008 04:11:01 +0000</pubDate>
+ <dc:creator>Kundan Singh</dc:creator>
+ <guid isPermaLink="false">1 at http://myprojectguide.org</guid>
+</item>
+</channel>
+</rss>

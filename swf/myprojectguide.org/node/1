@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <title>Student Developer Community | Gurukul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/color/garland-a725207e/style.css?w" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?w" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Gurukul My Project Guide"><img src="/sites/default/files/garland_logo.png" alt="Gurukul My Project Guide" id="logo" /><span>Gurukul</span> My Project Guide</a></h1>        </div>
+
+                                                    
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a></div>                              <h2>Student Developer Community</h2>                                                  <div class="clear-block">
+            <div id="node-1" class="node">
+
+
+
+  
+  <div class="content clear-block">
+    <p>The goal is to build a developers community of students doing or have done software academic projects during their studies. The community consists of volunteers with specific expertise who are willing to contribute their time in educating and directing small semester-wide academic projects, and volunteer students who actually do the project as part of their graduate or undergrad studies. </p>
+<p>My Project Guide is intended for graduate and under-grad students in computer science who are doing or want to do software research projects. The web site provides comprehensive background and assistance for doing such projects. It also connects the students with prospective mentors and experts in the project area.</p>
+<p>The web site serves two main purposes: (1) help a student successfully produce high quality software research project, and (2) help the faculty advisor or mentor get the maximum potential of the project students in their research.</p>
+<p><b>Why is it useful?</b></p>
+<p>The computer science undergrad or graduate program in many countries such as USA and India require or encourage a final year project or research project. </p>
+<p>Lots of experts have ideas on new projects or small extensions to some existing projects. However, they do not have enough time or resources to invest in completing the project. On the other hand, a number of undergrad and graduate students have no idea of what projects are interesting and doable. Combining these two sets of people can reap many advantages.</p>
+<p><em>Existing systems:</em> sourceforge.org and freshmeat.net provide online resources for opensource projects. However, there is no community of experts guiding newcomers on projects. Existing student developers community is targeted towards specific platform or tools, such as MIT-Microsoft’s iCampus for .NET, Sun’s for Java, etc. Because of the commercial interest, the community gets limited and not very attractive to students. Google Summer of Code is an attempt in the right direction. <em>Gurukul: My Project Guide</em> is another attempt of connecting student developer community with open source projects and mentors. </p>
+<p>We will have an online directory where one can lookup for past projects. The directory provides prototypes of completed projects. These prototypes can then be licensed to startup companies that want to further productize the idea. The licensing revenue is shared among the students who did the project and the volunteers who provided the guidance and ideas. The goal is to build a community of volunteers.</p>
+<p><b>What does the community do?</b></p>
+<p><em>Information sharing:</em><br />
+Tutorial on common things such as how to use make, configure, CVS, gdb, etc.<br />
+Domain specific sections that give more details on programming in specific domains, e.g., how to do audio-video programming, how to build telephony applications.<br />
+Online repository of all past projects including source code and documentation.</p>
+<p><em>Expert guidance:</em><br />
+Mentors communicate with project students on specific topics and guide them through the project. Mentors don’t write code or document; the students do.<br />
+Mentors help in creating shorter milestones, and keep a tab on the progress.</p>
+<p><em>Who are mentors?:</em><br />
+Mentors are not professional experts but just people who have worked on a specific topic. It is a volunteer work. To become a mentor, either you have to be a professor, get recommended by a professor, or can prove that you have worked (as a programmer) on that specific topic for which you want to be a mentor.   Usually we will have one-to-many relationship between a mentor and students. We don’t want to cause confusion by having multiple mentors in the same project topic. However, students can ask the community for advice on other things beyond the knowledge of their mentor. </p>
+<p><b>Social network:</b><br />
+The community allows evaluating/rating the quality of previous projects by those who are using the previous projects. The mentors and students provide constructive feedback to each other. Multiple students doing similar project can communicate and share ideas and work load.<br />
+A student, who has successfully done a project, can then become an expert on future projects related to that topic.</p>
+<p><b>Style guidelines:</b><br />
+The community will honor different programming styles. However, there will be some common guidelines that must be followed: e.g., javadoc/doxygen style documentation for APIs, video of demo-able software showing how to run the demo, common ways of compiling using make tools or visual studio for C/C++, common style of one page executive summary of the project.<br />
+The goal is to build small pieces or tools to do small and single thing at a time, instead of building a massive system that does everything. However, multiple projects can later be combined to build umbrella projects.</p>
+<p>Portability and platform/tool independence will be encouraged. Thus, although students can do Windows-specific GUI applications, we will highly recommend projects using Qt, Wx, Python, Java or other portable toolkit. Similarly, HTML or PDF documents will be preferred over Microsoft word, ‘.mpg’ video format will be preferred over ‘.wmv’, and so on.</p>
+<p><b>Open source and open standards:</b><br />
+All the projects will be open source and (L)GPLed. Use of open standards will be encouraged instead of using proprietary technologies. Thus, a project on building a GTalk client based on XMPP is preferred over Skype client.</p>
+<p><b>Intellectual property:</b><br />
+The intellectual property (patent) related to a project, if owned by the mentor or student, must be disclosed, before the start of the project. A detailed write-up of the project idea with conception date will be published on the website before starting the project, so that no further patent applications be filed related to that project. If the mentor or the student violates the terms, their names will be removed (without removing the actual project), and a note will be made on the project site. Any project that is reported to have infringed on any existing or earlier patent, will contain an explicit note indicating the same. We also encourage publishing the idea on other sites such as on arxiv.org site or your personal web page to establish the work as prior art.</p>
+<p><b>Practical projects:</b><br />
+The goal is to do projects that can be used in real-life and are practically useful. </p>
+<p><b>Infrastructure:</b><br />
+We will provide server infrastructure such as DNS, file storage, media storage, gateway, etc., for doing networking project experiments. For example, if a student needs a SIP server but doesn’t know where to host it, we can host it on our site, and reuse it in future projects. We may be able to use the PlanetLab infrastructure.</p>
+<p><b>More to come</b><br />
+While finishing my PhD I started on and have been working on and off since then, on summarizing my experience as graduate student doing and mentoring research projects. The documents contain specific domain information on doing good quality software research projects in Internet real-time multimedia systems. I plan to finish the documents and put it as an online book. This will help IRT-style projects.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>
+          </div>
+                    <div id="footer">&copy; 2008-2012, Kundan Singh, myprojectguide.org</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node/1?destination=node%2F1"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-f7a79eb688525b34bd228b63d952f65a" value="form-f7a79eb688525b34bd228b63d952f65a"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2>Navigation</h2>
+
+  <div class="content"><ul class="menu"><li class="expanded last"><a href="/book" title="Explore and contribute to student projects">Projects</a><ul class="menu"><li class="leaf first"><a href="/forum" title="">Discussion Forum</a></li>
+<li class="leaf"><a href="/node/8" title="Bookmarks">Bookmarks</a></li>
+<li class="leaf"><a href="/node/7" title="Past Projects at Columbia University">Past Projects</a></li>
+<li class="leaf last"><a href="/node/170" title="Project Implementation Reports">Project Reports</a></li>
+</ul></li>
+</ul></div>
+</div>
+<div id="block-forum-0" class="clear-block block block-forum">
+
+  <h2>Active forum topics</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16" title="36 comments">Project ideas on web systems</a></li>
+<li><a href="/node/6" title="27 comments">Project Ideas on Multimedia Networking</a></li>
+<li class="last"><a href="/node/17" title="8 comments">Project ideas in distributed systems and networks</a></li>
+</ul></div><div class="more-link"><a href="/forum" title="Read the latest forum topics.">more</a></div></div>
+</div>
+<div id="block-comment-0" class="clear-block block block-comment">
+
+  <h2>Recent comments</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16#comment-107">Completed</a><br />2 years 8 weeks ago</li>
+<li><a href="/node/16#comment-106">Extension VideoIO to include WebRTC</a><br />1 year 44 weeks ago</li>
+<li><a href="/node/16#comment-105">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-104">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-103">SIP in Javascript</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/16#comment-102">Bring full socket API to web applications</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/6#comment-101">Platform for Multimedia Story Development</a><br />2 years 25 weeks ago</li>
+<li><a href="/node/6#comment-100">Service to report potential SIP interop problems</a><br />2 years 29 weeks ago</li>
+<li><a href="/node/6#comment-99">Completed</a><br />2 years 24 weeks ago</li>
+<li class="last"><a href="/node/6#comment-98">Add H.264 video in SIP-RTMP gateway</a><br />2 years 38 weeks ago</li>
+</ul></div></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

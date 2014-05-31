@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <title>Project ideas on web systems | Gurukul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/color/garland-a725207e/style.css?w" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?w" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Gurukul My Project Guide"><img src="/sites/default/files/garland_logo.png" alt="Gurukul My Project Guide" id="logo" /><span>Gurukul</span> My Project Guide</a></h1>        </div>
+
+                                                    
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a> › <a href="/forum">Forums</a> › <a href="/forum/6">Computer Science Projects</a></div>                              <h2>Project ideas on web systems</h2>                                                  <div class="clear-block">
+            <div id="node-16" class="node">
+
+
+
+      <span class="submitted">Wed, 11/25/2009 - 00:09 — Kundan Singh</span>
+  
+  <div class="content clear-block">
+    <p>List of project ideas related to web services and systems.</p>
+  <div class="forum-topic-navigation clear-block">
+              <a href="/node/6" class="topic-next" title="Go to next forum topic">Project Ideas on Multimedia Networking ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/forum/6" rel="tag" title="Ideas related to computer science research projects">Computer Science Projects</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments"><a id="comment-106"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Fri, 07/20/2012 - 23:42 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-106" class="active">Extension VideoIO to include WebRTC</a></h3>
+
+    <div class="content">
+      <p>The existing <a href="http://code.google.com/p/flash-videoio">Flash VideoIO</a> project provides a simple to use video box with extensive API to enable several use cases such as video messaging, playback, two-party calls and multi-party conferencing. It works on top of the Flash Player plugin. This project extends the VideoIO component so that it detects the emerging WebRTC in the browser, and if available uses that, otherwise falls back to the Flash application. The goal is to enable smooth transition of video related applications to emerging HTML5 technologies. A common API enables web applications to be independent of the underlying capability of the browser or plugin. The common API will be in JavaScript.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-103"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 02/02/2012 - 00:10 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-103" class="active">SIP in Javascript</a></h3>
+
+    <div class="content">
+      <p>The goal of this <a href="http://code.google.com/p/sip-js">SIP in Javascript</a> project is to port the existing Python-based Session Initiation Protocol (SIP) and related Session Description Protocol (SDP) library of the <a href="http://39peers.net">39 Peers</a> project to Javascript. The project should use event-based model with best practices in Javascript object oriented design.</p>
+<p>Due to the current limitations of Javascript (no UDP socket, no TCP server socket, no device access), implementation of certain network applications such as a VoIP phone in pure Javascript is not possible. However, using the separate <a href="http://code.google.com/p/flash-network">flash-network</a> project that provides the complete socket and media API to Javascript one can build many types of network application including a SIP phone in the browser. In future, the availability of native WebRTC in browsers will enable multimedia sessions in the browser.</p>
+<p>The demonstration of this project should combine the SIP javascript with flash-network and flash-videoIO to build a complete SIP-based video phone in the browser. The browser phone should interoperate with existing SIP phones such as X-Lite and Bria.</p>
+<p>Additionally, it should support <a href="http://tools.ietf.org/html/draft-ibc-sipcore-sip-websocket-01">SIP over web socket</a> using an appropriate third-party SIP proxy that supports such an extension.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-107"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Fri, 03/30/2012 - 21:42 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-107" class="active">Completed</a></h3>
+
+    <div class="content">
+      <p>The project is completed at <a href="http://code.google.com/p/sip-js/" title="http://code.google.com/p/sip-js/">http://code.google.com/p/sip-js/</a> to support both Flash Player and WebRTC/WebSocket mode. In the WebSocket mode it needs a SIP proxy server capable of SIP over WebSocket such as the sipd.py application from <a href="http://code.google.com/p/p2p-sip" title="http://code.google.com/p/p2p-sip">http://code.google.com/p/p2p-sip</a> project.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-104"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Sat, 02/18/2012 - 05:19 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-104" class="active">Partly Completed</a></h3>
+
+    <div class="content">
+      <p>An initial implementation is completed and available as open source at <a href="http://code.google.com/p/sip-js/">http://code.google.com/p/sip-js</a> and we are looking for more developers to interoperate with WebRTC and SIP over web socket. An initial demonstration is available as <a href="http://theintencity.com/sip-js/phone.html">Web-based SIP phone</a>.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-102"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 02/01/2012 - 23:58 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-102" class="active">Bring full socket API to web applications</a></h3>
+
+    <div class="content">
+      <p>Using Javascript, Flash Player and Adobe Integrated Runtime (AIR) applications create an easy to use Javascript API that allows any web application to use complete socket API. In particular, AIR supports datagram (UDP) socket as well as (TCP) server socket that allows building any type of network application. But Flash Player lacks these primitives hence web applications relying on Flash Player cannot build any type of network system. Flash Player also has custom cross-domain security restrictions preventing it from building general purpose network clients that can connect to existing network services on the Internet without installing custom cross-domain security provisions on the server. </p>
+<p>The idea behind this <a href="http://code.google.com/p/flash-network/">flash-network</a> project is to bring the power of AIR to web applications by having your Javascript code talk to an embedded Flash application that in turn talks to a locally running AIR application for full network/socket API. Once the system is installed, it does not depend on any server side custom provisions. Additionally, it should allow integration with the <a href="http://code.google.com/p/flash-videoio">flash-videoio</a> project to enable audio/video sessions using RTP (real-time transport protocol) and SRTP (secure-RTP) from the browser. This project is another step in bringing peer-to-peer applications to the end users, and away from "managed" services that are common today.</p>
+<p>Security and permissions are of great importance in bringing the full socket API to web applications. In particular, the end-user with the browser should have absolute control over which web application can access the socket API, and should be able to audit and manage the API usage at any time.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-105"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Sat, 02/18/2012 - 05:23 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-105" class="active">Partly Completed</a></h3>
+
+    <div class="content">
+      <p>An initial implementation is completed. The developer's guide is available at <a href="http://theintencity.com/flash-network">http://theintencity.com/flash-network</a> and works on popular browsers using latest Flash Player. Future work involves better access control, security and management of usage.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-94"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 09/08/2011 - 23:53 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-94" class="active">Translator between RTCWeb/WebRTC and SIP/RTP</a></h3>
+
+    <div class="content">
+      <p>Build a generic framework for creating RTC web applications, and interoperating with traditional SIP systems. The IETF RTCWEB working group is defining standards for voice and video communication within a browser. Google has released open source WebRTC software that includes high quality voice and video engine. Interoperating with SIP involves RESTful APIs for signaling in the web side that uses native RTCWEB or external WebRTC-based plugin/application, and SIP/RTP on the other side. The translator can sit in the local host or network to enable directly talking to both other browsers or SIP/RTP user agents, or in a server-side gateway which provides a network hosted translation.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-87"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 12/13/2010 - 10:59 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-87" class="active">Web-based video office to allow visitors to talk to the owner</a></h3>
+
+    <div class="content">
+      <p>Build a web-based video office application which the owner can use to talk to his office visitors. When someone visits the office, the owner should notification on his existing instant messaging client, so that he can visit his office to talk to the visitor. The application should have a list of waiting visitors, and give an option to the owner to select which visitor he wants to talk to. Visitors should be able to send offline message to the owner in his office, which the owner sees when he next opens his office.</p>
+<p>Required: Javascript or Actionscript, server programming</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-88"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 12/13/2010 - 11:00 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-88" class="active">Completed and closed</a></h3>
+
+    <div class="content">
+      <p>A <a href="http://flash-videoio.appspot.com/office/kundan10@gmail.com/">Video Office</a> application is created using Flash-VideoIO, Google App Engine, its Channel API and XMPP module. You can create your own video office using your Google account -- visit the link for details on how.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-84"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 12/08/2010 - 08:48 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-84" class="active">Web-based random video chat application</a></h3>
+
+    <div class="content">
+      <p>Build a chat-roulette style random video chat application that connects random people. Your application should have an option to logout and login, and to select a next random person. It should allow both video chat and text chat among the two connected people.</p>
+<p>Required: Javascript, server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-85"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 12/08/2010 - 08:51 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-85" class="active">Completed and closed</a></h3>
+
+    <div class="content">
+      <p>This project is implemented as <a href="http://random-face.appspot.com">Random Face</a> application using <a href="http://code.google.com/p/flash-videoio">Flash-VideoIO</a> on Google App Engine using its Channel API. You can view the source code of two files, <a href="http://random-face.appspot.com/static/index.html.txt">index.html</a> that renders the front end user interface and <a href="http://random-face.appspot.com/static/main.py.txt">main.py</a> that forms the back-end service using Google App Engine.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-82"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:46 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-82" class="active">Two-party video chat application on Facebook</a></h3>
+
+    <div class="content">
+      <p>Build a Facebook application that allows you to video chat with your online friend. The interface should enable two-party video call and display the video of both sides in a call. You do not have to worry about text chat because users can already use Facebook's text chat. The goal is to provide embedded experience of video call from within Facebook.</p>
+<p>Required: Javascript, PHP<br />
+Desired: FBML/FBJS familiarity</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-83"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:48 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-83" class="active">Completed and closed</a></h3>
+
+    <div class="content">
+      <p>The project is already implemented as <a href="http://apps.facebook.com/face-talk">face-talk</a> using <a href="http://apps.facebooks.com/flash-videoio">flash-videoio</a>. It is a FBML application for Facebook. The source code of face-talk will be made available soon.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-81"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:42 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-81" class="active">Browser extension to video chat with others browsing the site</a></h3>
+
+    <div class="content">
+      <p>Build a Firefox (or IE) extension to video and text chat with other people browsing the same web site. Once a user installs this extension, he sees a user list and a chat history area. The user list and chat history content keeps changing as the user browses from one web site to another, and reflects the current user list and chat history associated with the currently opened page in the browser. How do you intend to handle multi-tab browsing?</p>
+<p>Required: Javascript, Xul, server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-80"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:40 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-80" class="active">Browser plugin to provide high quality audio capture interface</a></h3>
+
+    <div class="content">
+      <p>Create a browser plugin (either for Firefox or IE) that allows access to high-quality encoded voice using Speex and UDP. The plugin API allows an application to start and stop an audio session, set local and remote transport addresses to receive and send voice packets to. The plugin should not be dependent on any other browser plugin such as Flash Player. It should support multiple simultaneous sessions.</p>
+<p>Required: C/C++, or in whatever language you can write a browser plugin.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-79"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:40 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-79" class="active">Browser plugin to send Flash audio/video on UDP</a></h3>
+
+    <div class="content">
+      <p>Create a browser plugin (either for Firefox or IE) that allows the Flash application to use the plugin to convert its RTMP-based media to raw UDP, and vice-versa. The Flash application determines the target transport addresses. The plugin must prompt the user for approval before sending UDP packets to the target address in a session.</p>
+<p>Required: Actionscript, C/C++ or in whatever language you can write a browser plugin.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-78"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:39 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-78" class="active">Browser modification to enable end-to-end media path</a></h3>
+
+    <div class="content">
+      <p>Modify an existing open source browser such as Mozilla to define new APIs that enable end-to-end connectivity across NAT and Firewall. An application program such as using Javascript embedded in web sites should be able to use the API for establishing end-to-end voice calls. How do you authenticate a connection request?</p>
+<p>Required: C/C++, or whatever language the browser is written in.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-77"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:39 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-77" class="active">Secure soft-card for web authentication</a></h3>
+
+    <div class="content">
+      <p>Create a web authentication system that allows a user to obtain a soft-card, a secure and signed image file that looks like an identity card, and use that to store passwords for web sites and to authenticate with the web site. This is similar to how Firefox can store passwords, and supply them when needed, and how the <a href="http://code.google.com/p/videocity">videocity project</a> defines a soft-card. The authentication of soft-card should be based on public-key cryptography.</p>
+<p>Required: any high-level programming language, Python preferred.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-76"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:38 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-76" class="active">Shared browsing among multiple people</a></h3>
+
+    <div class="content">
+      <p>Build a mechanism that allows shared web browsing among multiple people. Ideally, this should be a browser extension, but it is not a requirement. For example, you can build this as a browser inside a browser using iframe. The goal is to build a collaboration platform that allows a user to control a shared browsing session, e.g., to demonstrate or some some web sites to his friends or family. How would it work for embedded content and input, e.g., controlling the youtube video playback, so that everyone watches the same video in the session.</p>
+<p>Required: Javascript or Actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-75"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:37 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-75" class="active">Web-based instructional software to teach high-school math</a></h3>
+
+    <div class="content">
+      <p>Build a web-based math tutoring application, that allows an instructor to teach fundamentals of math (or any other subject) to his students on the web. The application should have tools and widgets to enable common activities in learning a subject, e.g., video communication, drawings, equations, graphs, boxes, etc. You do not need to create the math syllabus, but should allow a user (teacher) to add or edit lecture materials.</p>
+<p>Required: Javascript or Actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-74"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:37 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-74" class="active">Web-based Internet radio and TV system</a></h3>
+
+    <div class="content">
+      <p>Build a web-based Internet radio and TV application. A user should be able to browser through multiple channels, see the program, and tune-in to a particular channel. A publisher owns a channel and should be able to create programs for a channel. The programming should allow incorporating existing freely available media resources on the web, e.g., youtube, with proper credits. Do not worry about billing in this project. The end-user should not be able to control or record the media, except changing the channel.</p>
+<p>Required: Javascript or Actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-73"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:36 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-73" class="active">Web-based multi-party video conferencing</a></h3>
+
+    <div class="content">
+      <p>Build a multi-party video conferencing application using <a href="http://code.google.com/p/flash-videoio">Flash-VideoIO</a> or your own. It should use asynchronous events instead of polling. It should have an API to enable embedding the widget in other web sites. A conference will be identified using an URL. It should have an API to access and modify conference and participants metadata.</p>
+<p>Required: Javascript and/or Actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-86"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 12/08/2010 - 08:57 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-86" class="active">Completed</a></h3>
+
+    <div class="content">
+      <p>Part of this project is completed as <a href="http://public-chat.appspot.com/">Public Chat</a>, a multi-party audio, video and text chat application built on top of Python-based Google App Engine and using Channel API for asynchronous instant messaging and presence. You can see the source files: <a href="http://public-chat.appspot.com/static/index.html.txt">index.html</a> is the front-end user interface, <a href="http://public-chat.appspot.com/static/webtalk.js">webtalk.js</a> is the client side Javascript to do signaling, and <a href="http://public-chat.appspot.com/static/main.py.txt">main.py</a> is the back-end service code. It defines RESTful API for userlist and chathistory resources. Since this is HTML/Javascript based application, just copying the code to your web site should work well.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-72"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:36 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-72" class="active">Web-based real-time experts-advice social application</a></h3>
+
+    <div class="content">
+      <p>Build a web-based application to connect experts with users in real-time. A user can sign up as expert on some topic, maintain his appointments in a calendar, and provide advice using real-time video conferencing and text. A user can browse through list of experts for a topic, reserve an appointment with an expert, pay for the service, and connect with him during the reserved slot. The system should allow a user to provide review feedback and rating to an expert after getting served.</p>
+<p>Required: Javascript or Actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-71"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:35 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-71" class="active">Web-based scalable presence and messaging system</a></h3>
+
+    <div class="content">
+      <p>Build a large scale presence and instant messaging application using existing web technologies such as HTTP, comet programming, websockets, etc. Do not use XMPP for IM and presence. The goal is to demonstrate that the basic web technologies are enough to build scalable instant messaging applications. How would you integrate it with existing IM systems?</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-70"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:34 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-70" class="active">Web-based shared collaboration space</a></h3>
+
+    <div class="content">
+      <p>Build a web-based collaboration application with common widgets such as white-board, text chat, etherpad style document editing, and video conferencing. The goal is to enable collaboration among participants, e.g., in an job interview or project discussion.</p>
+<p>Required: Javascript or actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-69"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:34 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-69" class="active">Web-based shared video, slides and photo viewing</a></h3>
+
+    <div class="content">
+      <p>Build a web-based application to share media with others in real-time. A user should be able to invite his friends and family, and show them video, slides or photos while video chatting with them. The media resources may be uploaded from user's computer or downloaded from web URL. The goal is to enable people to show-off interesting photos or videos in real-time, and laugh or discuss together.</p>
+<p>Required: Javascript or actionscript, and server programming.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-68"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:33 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-68" class="active">Web-based unified messaging system</a></h3>
+
+    <div class="content">
+      <p>Build a web-based unified messaging application that combines various forms of messaging such as phone voice mails, emails, instant messaging and discussion forum. A user should be able to access his message box from web, or get it delivered via email. A user should be able to leave a message for another person from web or email. The backend service will need to interface with existing SIP-based phone systems as well as emails.</p>
+<p>Required: Javascript or actionscript, and Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-67"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 12/07/2010 - 01:32 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-67" class="active">Web-based Voice-over-IP client</a></h3>
+
+    <div class="content">
+      <p>Build a web-based client application that talks to a backend gateway to implement SIP-based voice-over-IP. Your client should be able to make or receive phone calls, handle missed calls, and acts as a desktop phone for the user. You may use an existing gateway such as <a href="http://code.google.com/p/siprtmp">siprtmp</a> for the backend.</p>
+<p>Required: Javascript, actionscript.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-61"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 04/15/2010 - 06:09 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-61" class="active">Scalable IM and presence for web</a></h3>
+
+    <div class="content">
+      <p>Using standard HTTP, build a client-server system for instant messaging and presence that can be used from JavaScript. You can get inspired by existing protocols like XMPP. The client written in JavaScript should display contact list and presence status, communication window with text-area that allows multi-party chat communication. The goal is to allow easy integration with existing HTML/JavaScript based web sites. You will use AJAX for HTTP request to the server, some variation of BOSH for bi-directional stream instead of client initiated polling, and JSON data format instead of having to work with XML. The focus should be on scalability, robustness and simplicity instead of features or protocol data format. Consider using paginated contact list instead of all at once, if the contact list is huge. Also use RESTful architecture as much as possible for accessing resources. The main challenge is building the scalable and robust server. Language: client in JavaScript, server in Python, Java or erlang.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-33"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 11/29/2009 - 14:04 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-33" class="active">Indian railways trip planner</a></h3>
+
+    <div class="content">
+      <p>India has the largest railway network. However, because of the low cost (compared to flights), fixed cost (unlike market driven ticket cost of flights), and low cancellation penalty, the railways tickets get booked quickly. Planning a trip by rail is difficult unless seats are available in direct train. There are too many connections, too many trains and too many train routes. Sometimes there are quota from a neighboring station so that if you can't get ticket from your home town you can take the train from the neighboring town, either next or previous. There are several provisions for last minute, last hour and last week ticket purchase at a higher cost. In summary, railway trip planning is very complicated. </p>
+<p>The goal of this project is to build an online railway trip planner that periodically downloads the railway train schedule, availability, etc., from existing Indian railways web site, and provides following features:<br />
+1. Get availability and cost information for your trip.<br />
+2. Allow flexible dates for your trip.<br />
+3. Allow constraint driven search, e.g., reach on so-and-so date, or must have AC 2 tier.<br />
+4. Be able to save, compare and print itineraries, and integrate with online ticketing system.<br />
+5. Show your journey information on a map.<br />
+6. Be able to pick the connections and compare multiple options.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-32"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 11/29/2009 - 13:44 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-32" class="active">Python web communication framework</a></h3>
+
+    <div class="content">
+      <p>Build a web framework in Python that integrates communication and video streaming, and allows you to quickly build web sites that support multimedia and communication. There are several Python based web frameworks such as Django and Pylons. The goal of this project is to emphasize on (1) quick web application development and (2) seamless integration with communication protocols such as XMPP and video streaming such as using Flash. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-30"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 11/29/2009 - 13:07 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-30" class="active">Flash GUI for Python Software</a></h3>
+
+    <div class="content">
+      <p>Python is a great application programming language. ActionScript (e.g., in Flash Player) is a great user interface programming language. The goal of this project is to combine the best of both languages. You will create a new framework that will allow (1) a Python program to quickly add a user interface using ActionScript, and (2) an ActionScript software to easily connect and use Python program for additional tasks. One option is to create markup language in Python or XML similar to MXML which allows your to generate various components and scripts in Python and give it to the front end ActionScript software. The front end software takes the markup and creates new ActionScript, Flex and/or Flash components in run-time, and adjusts the user interface. The minor handling of the user input may be done in ActionScript itself, whereas major processing may get delegated to the back-end Python program. Some related work has been described earlier [<a href="http://www.infoq.com/news/2009/05/bruce-eckel">1</a>, <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=208528">2</a>] however your project will generalize the idea to build any user interface components. Another advantage of this approach is that it allows you to add additional features that do not exist in Flash Player such as UDP sockets. Language: ActionScript, Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-28"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/25/2009 - 00:42 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-28" class="active">Web authentication in Python</a></h3>
+
+    <div class="content">
+      <p>Python has largely undocumented and some broken support for Digest authentication [<a href="http://www.ietf.org/rfc/rfc2617.txt">1</a>, <a href="http://blog.spikesource.com/pyhton_testcases.htm">2</a>, <a href="http://bugs.python.org/issue5286">3</a>]. Existing web services in Python largely use basic authentication or custom authentication such as using parameters or HTTP cookies [<a href="http://www.voidspace.org.uk/python/articles/cookielib.shtml">4</a>]. Using basic authentication is not secure, using parameters is not pure RESTful. In this project you will build an authentication mechanism on the server side using Digest authentication and HTTP cookies for a RESTful web service. The tasks are as follows:</p>
+<p>Create a web service which handles "GET /login", "GET /view", and "GET /logout" requests. When accessing the 'GET /login' request the server authenticates using Digest authentication. If you use your browser to access this, you will see the password prompt in the browser. After entering the correct username and password, the browser sends another request to your web server with authorization header. Your server verifies the authentication using pre-configured usernames and credentials. If the authentication is successful, then it returns success "200 OK" response, otherwise it again returns the "401 Unauthorized" response. Failure responses should be limited in failed attempts, so that it does not go in infinite loop with automated clients. For success response, the server also sets a cookie containing a session identifier, different from the user's credentials, which the browser can use for subsequent requests such as "GET /view" to the same server. When the user goes to the /logout URL, the server clears the cookies, by expiring it, and removes the session, so that next time the browser will have to authenticate again. You can use the rfc2617.py module of <a href="http://code.google.com/p/p2p-sip/source/browse/trunk/src/std/rfc2617.py">p2p-sip</a> software to learn about Digest authentication in Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-27"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Wed, 11/25/2009 - 00:25 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-27" class="active">RESTful server tools in Python</a></h3>
+
+    <div class="content">
+      <p><a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a> architecture has several benefits over traditional RPC-style web services. There are several existing RESTful client and server software for Python with one or more problems: too intrusive, tied to the framework, not <a href="http://docs.python.org/library/wsgiref.html">WSGI</a> compliant, or allow only one type of applications. The goal of this project is to build Python module(s) that allows a developer to quickly and easily create RESTful services. There are following tasks:</p>
+<p>(1) Build a regular expression pattern matching URL "router" to transform a matching request and/or invoke a wsgi compliant application for matching request. The router is a wsgi compliant gateway.</p>
+<p>(2) Define a unified data format for representing structured data, which can be easily and unambiguously mapped to both JSON and XML. Python 2.6 has built-in json module. Build a function represent(value, type) which takes the value in this unified data format and type of either 'text/plain', 'text/xml' or 'text/json' and returns a string formatted using that particular representations: plain text, XML or JSON, respectively. The conversion does not have to be bi-directional.</p>
+<p>(3) Define a high level decorator, @resource, which transforms resource-type function with methods GET, PUT, DELETE, POST to a wsgi application that can be supplied to the router. This allows the developer to build the RESTful service handler either using low level wsgi application or high level resource-style function.</p>
+<p>(4) Define a high level function bind(value), which transforms a Python name "value" to a wsgi compliant resource which can be supplied to the router. The value can be a module, object, class or function, and your software should handle these correctly, e.g., if "GET /value/attr" may return the value of property "attr" of that "value" object, or "POST /value" may create a new  object of "value" class and return the new object "id".</p>
+<p>(4) Use the wsgiref built-in web server and your software to demonstrate a simple RESTful service, e.g., for accessing file lists on your disk.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-34"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Mon, 11/30/2009 - 12:16 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/16#comment-34" class="active">Completed and closed</a></h3>
+
+    <div class="content">
+      <p>The project is completed and hosted at <a href="http://code.google.com/p/restlite/" title="http://code.google.com/p/restlite/">http://code.google.com/p/restlite/</a></p>
+<p>Bug fixes and enhancements are welcome!</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div></div>          </div>
+                    <div id="footer">&copy; 2008-2012, Kundan Singh, myprojectguide.org</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node/16?destination=node%2F16"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-086ae5364a72337c597acbaec56f49c8" value="form-086ae5364a72337c597acbaec56f49c8"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2>Navigation</h2>
+
+  <div class="content"><ul class="menu"><li class="expanded last"><a href="/book" title="Explore and contribute to student projects">Projects</a><ul class="menu"><li class="leaf first"><a href="/forum" title="">Discussion Forum</a></li>
+<li class="leaf"><a href="/node/8" title="Bookmarks">Bookmarks</a></li>
+<li class="leaf"><a href="/node/7" title="Past Projects at Columbia University">Past Projects</a></li>
+<li class="leaf last"><a href="/node/170" title="Project Implementation Reports">Project Reports</a></li>
+</ul></li>
+</ul></div>
+</div>
+<div id="block-forum-0" class="clear-block block block-forum">
+
+  <h2>Active forum topics</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16" title="36 comments" class="active">Project ideas on web systems</a></li>
+<li><a href="/node/6" title="27 comments">Project Ideas on Multimedia Networking</a></li>
+<li class="last"><a href="/node/17" title="8 comments">Project ideas in distributed systems and networks</a></li>
+</ul></div><div class="more-link"><a href="/forum" title="Read the latest forum topics.">more</a></div></div>
+</div>
+<div id="block-comment-0" class="clear-block block block-comment">
+
+  <h2>Recent comments</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16#comment-107" class="active">Completed</a><br />2 years 8 weeks ago</li>
+<li><a href="/node/16#comment-106" class="active">Extension VideoIO to include WebRTC</a><br />1 year 44 weeks ago</li>
+<li><a href="/node/16#comment-105" class="active">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-104" class="active">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-103" class="active">SIP in Javascript</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/16#comment-102" class="active">Bring full socket API to web applications</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/6#comment-101">Platform for Multimedia Story Development</a><br />2 years 25 weeks ago</li>
+<li><a href="/node/6#comment-100">Service to report potential SIP interop problems</a><br />2 years 29 weeks ago</li>
+<li><a href="/node/6#comment-99">Completed</a><br />2 years 24 weeks ago</li>
+<li class="last"><a href="/node/6#comment-98">Add H.264 video in SIP-RTMP gateway</a><br />2 years 38 weeks ago</li>
+</ul></div></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

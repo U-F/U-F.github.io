@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <title>Project ideas in distributed systems and networks | Gurukul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?w" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/color/garland-a725207e/style.css?w" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?w" />
+        <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebar-right">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title="Gurukul My Project Guide"><img src="/sites/default/files/garland_logo.png" alt="Gurukul My Project Guide" id="logo" /><span>Gurukul</span> My Project Guide</a></h1>        </div>
+
+                                                    
+      </div> <!-- /header -->
+
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a> › <a href="/forum">Forums</a> › <a href="/forum/6">Computer Science Projects</a></div>                              <h2>Project ideas in distributed systems and networks</h2>                                                  <div class="clear-block">
+            <div id="node-17" class="node">
+
+
+
+      <span class="submitted">Sun, 11/29/2009 - 13:15 — Kundan Singh</span>
+  
+  <div class="content clear-block">
+    <p>Project ideas in distributed system, networks, that are not related to web or multimedia.</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="/node/6" class="topic-previous" title="Go to previous forum topic">‹ Project Ideas on Multimedia Networking</a>
+              <a href="/node/15" class="topic-next" title="Go to next forum topic">Tips, tricks and tools ›</a>
+      </div>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+          <div class="terms"><ul class="links inline"><li class="taxonomy_term_6 first last"><a href="/forum/6" rel="tag" title="Ideas related to computer science research projects">Computer Science Projects</a></li>
+</ul></div>
+        </div>
+
+          <div class="links"><ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+      </div>
+
+</div>
+<div id="comments"><a id="comment-97"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 09/08/2011 - 00:07 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-97" class="active">Translator between RTMFP and SIP/RTP or RTMP</a></h3>
+
+    <div class="content">
+      <p>Based on the result of <a href="https://github.com/OpenRTMFP/Cumulus">openRTMFP</a> effort, investigate whether a translation between RTMFP and RTMP is feasible or not, and incorporate the translation in existing <a href="http://code.google.com/p/rtmplite">rtmplite</a> project. Further use the existing SIP-RTMP gateway as part of the rtmplite project to facilitate translation between RTMFP and SIP/RTP. Once RTCWEB is available in the browser, this effort could be extended to incorporate a translator between RTMFP and RTCWEB as well. Unlike RTMP, RTMFP provides a low latency UDP-based media path and hence avoids the latency and quality issue faced by some fraction of users when using a server side SIP-RTMP gateway. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-95"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 09/08/2011 - 23:58 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-95" class="active">Automatic and dynamic scaling of SIP based applications</a></h3>
+
+    <div class="content">
+      <p>Based on research at Columbia University (by Jong Yul) that creates a dynamically and automatically scalable SIP proxy server farm on the cloud (Amazon EC2), create a generic framework that allows scaling any SIP server component such as conference server, voice mail, media server or back-to-back user agent (SBC). Extend it to support translators such as scalable SIP-RTMP gateway farm. A challenge is to distinguish between stateful and stateless entities, and correctly making sure that the correct stateful entities are reached correctly with a call or conference. You can use my SIP server components from the <a href="http://39peers.net">39 peers</a> project. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-63"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sat, 04/24/2010 - 08:35 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-63" class="active">SIP library in ActionScript</a></h3>
+
+    <div class="content">
+      <p>Implement a SIP library in ActionScript 3 for Flash Player and AIR. Flash Player has some restrictions that prevents fully featured SIP software in Flash alone: there is no UDP socket, there is no incoming socket connection, and there is no access to the encoded audio (Speex) and video content in ActionScript application. Secondly, Flash Player security restrictions require socket policy server running on the SIP endpoints. This makes it difficult to implement a SIP audio/video softphone in Flash Player alone without support from external translator or gateway. AIR resolves some of these issues --  it has UDP socket as well as access to raw microphone audio. Your project will simplify the requirements of the SIP application so that you can implement on Flash Player.</p>
+<p>Your SIP library should support RFC 3261 based signaling for registration and sessions. Although SDP is not needed, it would be nice to have. Implement only TCP-mode so that it can work consistently for Flash Player as well as AIR. You only need to implement external media sessions or text (instant messaging) sessions. Note that due to Flash Player restrictions you cannot implement RTP-based built-in media sessions or RFC 3263 based DNS lookups. Your client library will establish a TCP connection to the SIP server, use sip-outbound for connections so that incoming requests can be sent by the server on the same connection, and demonstrate server-based instant messaging sessions and presence.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<div class="indented"><a id="comment-96"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Tue, 09/13/2011 - 00:01 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-96" class="active">Demonstrate it using a SIP phone in peer-to-peer mode</a></h3>
+
+    <div class="content">
+      <p>As an extension to this, a demonstration using an AIR-based complete SIP phone supporting Speex/G.711 audio, H.264 video, instant messaging and presence, as well as NG911 calling will be great.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div><a id="comment-60"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 04/15/2010 - 05:57 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-60" class="active">Implement RELOAD (P2P-SIP)</a></h3>
+
+    <div class="content">
+      <p>Implement the current version of IETF P2P-SIP WG internet-draft You may reuse the core p2p, dht and rfc3261 modules of the 39 peers project. The goal is to implement the core functions that allows incorporating external DHT algorithm, authentication as well as transport. I have a few suggestions to simplify the draft and hence the implementation. Language: Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-59"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Thu, 04/15/2010 - 05:56 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-59" class="active">Survey of P2P VoIP techniques</a></h3>
+
+    <div class="content">
+      <p>Survey of techniques for P2P VoIP: The project is a study project that surveys several existing P2P VoIP systems such as Skype, Gtalk, and several proposals in IETF P2P-SIP working group. The questions to answer are what are the best practices, what works, what doesn't, what has been implemented and tested, how do they compare with respect to scalability, robustness and security. Instead of comparing the whole systems, it is better to compare one function at a time, e.g., network maintenance, lookup, signup, etc. Clearly a critical and objective analysis is more useful than saying A is better than B.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-42"></a>
+<div class="comment comment-published odd">
+
+  <div class="clear-block">
+      <span class="submitted">Sat, 12/05/2009 - 11:04 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-42" class="active">RESTful interface for DHT</a></h3>
+
+    <div class="content">
+      <p>Design and implement a simple RESTful interface for secure distributed hash table. Inter-node communication should also happen using REST architecture. For example, a single resource could be represented using "/data/{key}" whereas an resource that allows multiple values could be represented using "/array/{key}" where each value could be referred using index, e.g., "/array/{key}/{index}". You should first define different types of data: single, array or dictionary indexed by owner.  Then you should define authentication and security mechanism for communication and data. Finally the representation should support XML, JSON and HTML for listing. The HTML representation should present an example DHT interface which one can use from a browser. You can use the DHT implementation in <a href="http://code.google.com/p/p2p-sip">p2p-sip</a> project and REST server tools in <a href="http://code.google.com/p/restlite">restlite</a> project. Language: Python.</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+<a id="comment-31"></a>
+<div class="comment comment-published even">
+
+  <div class="clear-block">
+      <span class="submitted">Sun, 11/29/2009 - 13:17 — Kundan Singh</span>
+  
+  
+  
+    <h3><a href="/node/17#comment-31" class="active">P2P simulator</a></h3>
+
+    <div class="content">
+      <p>Build a peer-to-peer network simulator in Python that implements various structured and unstructured algorithms. Related work includes p2psim, oversim and peersim. This project will build several modules to allow a developer to quickly put together an implementation of a P2P algorithm, view it graphically, and see the impact of various parameters. You should be able to support nodes behind NAT and firewall in your simulator, incorporate security and analyze the performance. Language: Python</p>
+          </div>
+  </div>
+
+      <div class="links"><ul class="links"><li class="comment_forbidden first last"></li>
+</ul></div>
+  </div>
+</div>          </div>
+                    <div id="footer">&copy; 2008-2012, Kundan Singh, myprojectguide.org</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node/17?destination=node%2F17"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-95c752179d7e71b6344f3d0a816a9774" value="form-95c752179d7e71b6344f3d0a816a9774"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2>Navigation</h2>
+
+  <div class="content"><ul class="menu"><li class="expanded last"><a href="/book" title="Explore and contribute to student projects">Projects</a><ul class="menu"><li class="leaf first"><a href="/forum" title="">Discussion Forum</a></li>
+<li class="leaf"><a href="/node/8" title="Bookmarks">Bookmarks</a></li>
+<li class="leaf"><a href="/node/7" title="Past Projects at Columbia University">Past Projects</a></li>
+<li class="leaf last"><a href="/node/170" title="Project Implementation Reports">Project Reports</a></li>
+</ul></li>
+</ul></div>
+</div>
+<div id="block-forum-0" class="clear-block block block-forum">
+
+  <h2>Active forum topics</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16" title="36 comments">Project ideas on web systems</a></li>
+<li><a href="/node/6" title="27 comments">Project Ideas on Multimedia Networking</a></li>
+<li class="last"><a href="/node/17" title="8 comments" class="active">Project ideas in distributed systems and networks</a></li>
+</ul></div><div class="more-link"><a href="/forum" title="Read the latest forum topics.">more</a></div></div>
+</div>
+<div id="block-comment-0" class="clear-block block block-comment">
+
+  <h2>Recent comments</h2>
+
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="/node/16#comment-107">Completed</a><br />2 years 8 weeks ago</li>
+<li><a href="/node/16#comment-106">Extension VideoIO to include WebRTC</a><br />1 year 44 weeks ago</li>
+<li><a href="/node/16#comment-105">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-104">Partly Completed</a><br />2 years 14 weeks ago</li>
+<li><a href="/node/16#comment-103">SIP in Javascript</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/16#comment-102">Bring full socket API to web applications</a><br />2 years 17 weeks ago</li>
+<li><a href="/node/6#comment-101">Platform for Multimedia Story Development</a><br />2 years 25 weeks ago</li>
+<li><a href="/node/6#comment-100">Service to report potential SIP interop problems</a><br />2 years 29 weeks ago</li>
+<li><a href="/node/6#comment-99">Completed</a><br />2 years 24 weeks ago</li>
+<li class="last"><a href="/node/6#comment-98">Add H.264 video in SIP-RTMP gateway</a><br />2 years 38 weeks ago</li>
+</ul></div></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>
