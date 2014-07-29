@@ -1,4 +1,4 @@
-function array2heapPtr(arr) {
+array2heapPtr= function (arr) {
     // create and populate some data
     var floatData = new Float64Array(arr.length);
     for (i = 0; i < floatData.length; i++) floatData[i] = arr[i];
@@ -12,10 +12,43 @@ function array2heapPtr(arr) {
     heapBytes.set(new Uint8Array(floatData.buffer));
     return heapBytes;
 }
+postload = function(){
+calcKPSS = Module.cwrap("calcKPSS","number",["number","number","number"]);
+calcADF = Module.cwrap("calcADF","number",["number","number","number"]);
 
-var Module = {    'noInitialRun': true,    'noExitRuntime': true};
-calcola = Module.cwrap("calcola","number",["number"]);
-BO=loadScript("https://u-f.github.io/js/wrap1test_opt.js")
+console.log("Modloaded.")}
+BO=loadScript("https://u-f.github.io/js/wrap1test_opt.js",postload);
 
-timando=array2heapPtr([4.1,4.0,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9])
-calcola(timando.byteOffset)
+grabba = function(mark,s){return s.split(mark)[1].split("\n")[0]}
+
+
+KPSS_JS = function(INPUT,order) {
+var timando=array2heapPtr(INPUT);
+var ret=calcKPSS(timando.byteOffset,INPUT.length,order)
+
+fi=FS.readFile("KPSS1.TXT")
+resultfile=String.fromCharCode.apply(null, fi);
+console.log(resultfile);
+statistic=grabba("statistic = ",resultfile)
+//pval=grabba("Interpolated p-value ",resultfile)
+cvalues=grabba("Critical values: ",resultfile)
+vals=cvalues.split("   ")
+
+return {statistic:statistic,vals:vals,ret:ret}
+}
+
+ADF_JS = function(INPUT,order) {
+var timando=array2heapPtr(INPUT);
+var ret=calcADF(timando.byteOffset,INPUT.length,order)
+
+fi=FS.readFile("ADF1.TXT")
+resultfile=String.fromCharCode.apply(null, fi);
+console.log(resultfile);
+//statistic=grabba("statistic = ",resultfile)
+//pval=grabba("Interpolated p-value ",resultfile)
+//cvalues=grabba("Critical values: ",resultfile)
+//vals=cvalues.split("   ")
+
+return {ret:ret,res:resultfile}
+}
+
