@@ -67,7 +67,7 @@
                         value = null;
                     }
 
-                    deferCallback(callback,value,key);
+                    deferCallback(callback,value);
 
                     resolve(value);
                 };
@@ -333,10 +333,10 @@
     // call stack to be empty.
     // For more info : https://github.com/mozilla/localForage/issues/175
     // Pull request : https://github.com/mozilla/localForage/pull/178
-    function deferCallback(callback, value,key) {
+    function deferCallback(callback, value) {
         if (callback) {
             return setTimeout(function() {
-                return callback(value,key); 
+                return callback(value);
             }, 0);
         }
     }
@@ -462,7 +462,7 @@
                     }
 
                     if (callback) {
-                        callback(result,key); 
+                        callback(result);
                     }
 
                     resolve(result);
@@ -879,7 +879,7 @@
                         }
 
                         if (callback) {
-                            callback(result,key); 
+                            callback(result);
                         }
 
                         resolve(result);
