@@ -40,4 +40,4 @@ downloadWithName(otxt,"ur.pls");
 
 alert("K suck this strict mime checking.");
 
-return (0);
+//return (0);
