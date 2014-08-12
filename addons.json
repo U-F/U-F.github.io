@@ -12,4 +12,6 @@
 {Name:"Encryption Module",URL_ARR:["///U-F.github.io/"],Info:"",Dependencies:[]}
 ,
 {Name:"R Integration",URL_ARR:["///U-F.github.io/"],Info:"",Dependencies:[]}
+,
+{Name:"External Editor",URL_ARR:["///U-F.github.io/js/myStartupScript.js"],Info:"",Dependencies:[]}
 ]
