@@ -1,11 +1,11 @@
 var OANDA = OANDA || {};
 
-OANDA.baseURL = OANDA.baseURL || "http://api-fxtrade.oanda.com";
+OANDA.baseURL = OANDA.baseURL || "https://api-fxtrade.oanda.com";
 
 
 OANDA.auth = OANDA.auth || {};
 OANDA.auth.enabled = OANDA.auth.enabled || true;
-OANDA.auth.token = OANDA.auth.token || prompt("Give me your token:");
+OANDA.auth.token = OANDA.auth.token || _otoken;
 
 var setAuthHeader = function(xhr) {
     xhr.setRequestHeader("Authorization", "Bearer " + OANDA.auth.token);
