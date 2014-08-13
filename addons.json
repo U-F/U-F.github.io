@@ -9,6 +9,8 @@
 ,
 {"Name":"DropBox Integration","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
+{"Name":"Github Integration","URL_ARR":["///U-F.github.io/js/aes/aes.js","///U-F.github.io/js/github/github-int.js"],"Info":"","Dependencies":[]}
+,
 {"Name":"Encryption Module","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
 {"Name":"R Integration","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
