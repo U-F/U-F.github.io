@@ -62,7 +62,7 @@ UIObject = {
 };
 // see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
 // http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
-var ddmenudata = Ext.create('Ext.data.Store', {
+ddmenudata = Ext.create('Ext.data.Store', {
     fields: ['abbr', 'name'],
     data: [{
         "abbr": "https://api-fxtrade.oanda.com",
