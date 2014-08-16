@@ -99,6 +99,7 @@ oinit = function() {
             return a.instrument;
         })
     }
+    console.log("WTF");
     ); 
 }
 
