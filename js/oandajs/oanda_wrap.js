@@ -3,7 +3,7 @@ scripturl = "///u-f.github.io/js/oandajs/oanda.js";
 globalotrades={};
 UIObject = {
     xtype: "form",
-    url: 'save-form.php',
+    url: 'yadayadadeketethis',
     frame: true,
     id: "oform",
     title: 'Please provide your access token',
@@ -50,7 +50,7 @@ UIObject = {
             if (validateTok(val)) {
                 _otoken = val;
                 localStorage.setItem("_otoken",_otoken);
-                loadScript(scripturl);
+                loadScript(scripturl,oinit);
                 top[owinname].close();
                 setupOmenu();
             } else {
@@ -89,12 +89,10 @@ oinit = function() {
             return a.accountId
         })
         for (var idx in acctsArr) {
-            recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}"));
+            recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
             OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
         }
     });
-setTimeout(otdisplay,9000); // fix me later
-    
 }
 
 colDef= {
@@ -132,13 +130,22 @@ var comm="";
   console.log(comm);
 }
 
+omview = function() {
+    
+    OANDA.api("/v1/instruments", 'GET', {accountId:"112071"}, function(x){
+        
+    }
+    ); // acctsObj instead
+    
+}
+
 setupOmenu = function() {
     
         omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
         items: [
-            {text:"Account Consolidation",handler:oinit},
-            {text:"Market View",handler:function(){}},
+            {text:"Account Consolidation",handler:otdisplay},
+            {text:"Market View",handler:omview},
             {text:"Position Consolidation",handler:function(){}},
             {text:"Trading",handler:function(){alert("Not implemented in this version")}}
         ]
@@ -182,7 +189,7 @@ if (localStorage.getItem("_otoken")!=null) _otoken=localStorage.getItem("_otoken
 if (typeof _otoken == "undefined" || !validateTok(_otoken)) {
     owinname=displayWin("Oanda access info", UIObject)
 } else {
-    loadScript(scripturl);
+    loadScript(scripturl,oinit);
     setupOmenu();
 }
 
