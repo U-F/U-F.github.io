@@ -135,7 +135,7 @@ var comm="";
 setupOmenu = function() {
     
         omenu = Ext.create('Ext.menu.Menu', {
-        id: 'pluginMenu',
+        id: 'oMenu',
         items: [
             {text:"Account Consolidation",handler:oinit},
             {text:"Market View",handler:function(){}},
