@@ -92,6 +92,7 @@ oinit = function() {
             OANDA.rate.instruments("112071", ["interestRate", "instrument"], function(x) {
                 console.log(x);
                 instArr = x.instruments;
+                pairArr = instArr.map(function(x){return (x.instrument)});
                 ratesObj = {};
                 for (var ea in instArr) {
                     for (var cur in instArr[ea].interestRate) {
