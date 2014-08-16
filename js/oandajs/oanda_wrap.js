@@ -96,7 +96,7 @@ oinit = function() {
             })
         });
     });
-}
+} //
 colDef = {
     id: "A",
     instrument: "B",
