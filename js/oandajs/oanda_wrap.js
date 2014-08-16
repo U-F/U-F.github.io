@@ -89,7 +89,7 @@ oinit = function() {
                 recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
                 OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
             }
-            OANDA.rate.instruments("112071", ["interestRate", "instrument"], function(x) {
+            OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument"], function(x) {
                 console.log(x);
                 instArr = x.instruments;
                 pairArr = instArr.map(function(x){return (x.instrument)});
