@@ -132,7 +132,7 @@ var comm="";
 
 omview = function() {
     
-    OANDA.api("/v1/instruments", 'GET', {accountId:"112071"}, function(x){
+    OANDA.api("/v1/instruments", 'GET', {accountId:acctsArr[0]}, function(x){
         
     }
     ); // acctsObj instead
