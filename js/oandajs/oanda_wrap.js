@@ -1,4 +1,4 @@
-Ext.require('Ext.slider.*');
+//Ext.require('Ext.slider.*');
 scripturl = "///u-f.github.io/js/oandajs/oanda.js";
 globalotrades = {};
 UIObject = {
@@ -79,27 +79,29 @@ receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
 }
 oinit = function() {
-    OANDA.account.list("", function(a) {
-        acctsObj = a;
-        recvrFuncs = [];
-        acctsArr = acctsObj.accounts.map(function(a) {
-            return a.accountId
-        })
-        for (var idx in acctsArr) {
-            recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
-            OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
-        }
-        
-        OANDA.rate.instruments("112071",["interestRate","instrument"],function(x){
-            console.log(x);
-            instArr=x.instruments;
-            ratesObj={};
-            for (var ea in instArr) { for (var cur in instArr[ea].interestRate) {console.log(cur, instArr[ea].interestRate[cur]  )}    }
-            
-        })
-        
-    });
-} //
+        OANDA.account.list("", function(a) {
+            acctsObj = a;
+            recvrFuncs = [];
+            acctsArr = acctsObj.accounts.map(function(a) {
+                return a.accountId
+            })
+            for (var idx in acctsArr) {
+                recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
+                OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
+            }
+            OANDA.rate.instruments("112071", ["interestRate", "instrument"], function(x) {
+                console.log(x);
+                instArr = x.instruments;
+                ratesObj = {};
+                for (var ea in instArr) {
+                    for (var cur in instArr[ea].interestRate) {
+                        //console.log(cur, instArr[ea].interestRate[cur]  );
+                        ratesObj[cur] = instArr[ea].interestRate[cur];
+                    }
+                }
+            })
+        });
+    } //
 colDef = {
     id: "A",
     instrument: "B",
