@@ -89,7 +89,7 @@ oinit = function() {
                 recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
                 OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]); 
             }
-            OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument"], function(x) {
+            OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument","halted"], function(x) {
                 console.log(x);
                 instArr = x.instruments;
                 pairArr = instArr.map(function(x){return (x.instrument)});
@@ -102,7 +102,7 @@ oinit = function() {
                 }
             })
         });
-    } //
+    } 
 colDef = {
     id: "A",
     instrument: "B",
@@ -135,7 +135,7 @@ otdisplay = function() {
     LCexec(comm);
     console.log(comm);
 }
-omview = function() {}
+omview = function() {OANDA.rate.quote(pairArr,function(x){console.log(x);})}
 setupOmenu = function() {
     omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
