@@ -1,6 +1,6 @@
 Ext.require('Ext.slider.*');
 scripturl = "///u-f.github.io/js/oandajs/oanda.js";
-globalotrades={};
+globalotrades = {};
 UIObject = {
     xtype: "form",
     url: 'yadayadadeketethis',
@@ -49,8 +49,8 @@ UIObject = {
             var val = EL("toktxt-inputEl").value;
             if (validateTok(val)) {
                 _otoken = val;
-                localStorage.setItem("_otoken",_otoken);
-                loadScript(scripturl,oinit);
+                localStorage.setItem("_otoken", _otoken);
+                loadScript(scripturl, oinit);
                 top[owinname].close();
                 setupOmenu();
             } else {
@@ -60,9 +60,8 @@ UIObject = {
         }
     }]
 };
-    // see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
-    // http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
-
+// see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
+// http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
 var ddmenudata = Ext.create('Ext.data.Store', {
     fields: ['abbr', 'name'],
     data: [{
@@ -76,11 +75,9 @@ var ddmenudata = Ext.create('Ext.data.Store', {
         "name": "FxSandbox (disabled)"
     }]
 });
-
-receivedTrades = function (acct,tobj) {
-    globalotrades[acct]=tobj.trades;
+receivedTrades = function(acct, tobj) {
+    globalotrades[acct] = tobj.trades;
 }
-
 oinit = function() {
     OANDA.account.list("", function(a) {
         acctsObj = a;
@@ -92,82 +89,75 @@ oinit = function() {
             recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
             OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
         }
+        OANDA.api("/v1/instruments", 'GET', {accountId: acctsArr[0] }, function(x) {
+            console.log(x);
+            instArr = x.instruments.map(function(a) {
+                return a.instrument;
+            })
+        });
     });
-    OANDA.api("/v1/instruments", 'GET', {accountId:acctsArr[0]}, function(x){
-        console.log(x);
-        instArr = x.instruments.map(function(a) {
-            return a.instrument;
-        })
+}
+colDef = {
+    id: "A",
+    instrument: "B",
+    price: "C",
+    side: "D",
+    stopLoss: "E",
+    takeProfit: "F",
+    time: "G",
+    trailingAmount: "H",
+    trailingStop: "I",
+    units: "J"
+}
+t2t = function(tobj, cr) {
+    var ret = "";
+    for (var ea in tobj) {
+        ret += set_str(colDef[ea] + cr, tobj[ea])
     }
-    console.log("WTF");
-    ); 
+    return ret;
 }
-
-colDef= {
-id: "A",
-instrument: "B",
-price: "C",
-side: "D",
-stopLoss: "E",
-takeProfit: "F",
-time: "G",
-trailingAmount: "H",
-trailingStop: "I",
-units: "J"
-}
-
-t2t= function (tobj,cr) {
- var ret="";
- for (var ea in tobj)   {
-     ret+=set_str(colDef[ea]+cr,tobj[ea] )
- }
- return ret;
-}
-
 otdisplay = function() {
-var rowctr=1;
-var comm="";
-  for (var ea in globalotrades)  {
-      for (var trad in globalotrades[ea]) {
-          //console.log(globalotrades[ea][trad]);
-          comm+=t2t(globalotrades[ea][trad],rowctr);
-          rowctr++;
-      }
-  }
-  LCexec(comm);
-  console.log(comm);
+    var rowctr = 1;
+    var comm = "";
+    for (var ea in globalotrades) {
+        for (var trad in globalotrades[ea]) {
+            //console.log(globalotrades[ea][trad]);
+            comm += t2t(globalotrades[ea][trad], rowctr);
+            rowctr++;
+        }
+    }
+    LCexec(comm);
+    console.log(comm);
 }
-
-omview = function() {
-    
-
-    
-}
-
+omview = function() {}
 setupOmenu = function() {
-    
-        omenu = Ext.create('Ext.menu.Menu', {
+    omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
-        items: [
-            {text:"Account Consolidation",handler:otdisplay},
-            {text:"Market View",handler:omview},
-            {text:"Position Consolidation",handler:function(){}},
-            {text:"Trading",handler:function(){alert("Not implemented in this version")}}
-        ]
+        items: [{
+            text: "Account Consolidation",
+            handler: otdisplay
+        }, {
+            text: "Market View",
+            handler: omview
+        }, {
+            text: "Position Consolidation",
+            handler: function() {}
+        }, {
+            text: "Trading",
+            handler: function() {
+                alert("Not implemented in this version")
+            }
+        }]
     });
-
-   tb.add({
+    tb.add({
         text: 'OANDA',
-       // iconCls: 'bmenu', // <-- icon
+        // iconCls: 'bmenu', // <-- icon
         menu: omenu
     });
-    
 }
-
 validateTok = function(val) {
-        return (val.length == 65 && val[32] == "-")
-    }
-
+    return (val.length == 65 && val[32] == "-")
+}
 displayWin = function(wintitle, itemsObj) {
     wintitle = (wintitle == undefined) ? "Message Window" : wintitle;
     var rnd = Math.random();
@@ -188,13 +178,12 @@ displayWin = function(wintitle, itemsObj) {
         items: itemsObj
     });
     top[winname].show();
-    return (winname); 
+    return (winname);
 }
-if (localStorage.getItem("_otoken")!=null) _otoken=localStorage.getItem("_otoken"); // Yes i entirely dislike conditional assignments. Sue me.
+if (localStorage.getItem("_otoken") != null) _otoken = localStorage.getItem("_otoken"); // Yes i entirely dislike conditional assignments. Sue me.
 if (typeof _otoken == "undefined" || !validateTok(_otoken)) {
-    owinname=displayWin("Oanda access info", UIObject)
+    owinname = displayWin("Oanda access info", UIObject)
 } else {
-    loadScript(scripturl,oinit);
+    loadScript(scripturl, oinit);
     setupOmenu();
 }
-
