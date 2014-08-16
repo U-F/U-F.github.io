@@ -1,6 +1,19 @@
 //Ext.require('Ext.slider.*');
 scripturl = "///u-f.github.io/js/oandajs/oanda.js";
 globalotrades = {};
+ddmenudata = Ext.create('Ext.data.Store', {
+    fields: ['abbr', 'name'],
+    data: [{
+        "abbr": "https://api-fxtrade.oanda.com",
+        "name": "FxTrade Live"
+    }, {
+        "abbr": "https://api-fxpractice.oanda.com",
+        "name": "FxPractice (Demo -- disabled)"
+    }, {
+        "abbr": "whatev",
+        "name": "FxSandbox (disabled)"
+    }]
+});
 UIObject = {
     xtype: "form",
     url: 'yadayadadeketethis',
@@ -62,19 +75,7 @@ UIObject = {
 };
 // see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
 // http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
-ddmenudata = Ext.create('Ext.data.Store', {
-    fields: ['abbr', 'name'],
-    data: [{
-        "abbr": "https://api-fxtrade.oanda.com",
-        "name": "FxTrade Live"
-    }, {
-        "abbr": "https://api-fxpractice.oanda.com",
-        "name": "FxPractice (Demo -- disabled)"
-    }, {
-        "abbr": "whatev",
-        "name": "FxSandbox (disabled)"
-    }]
-});
+
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
 }
