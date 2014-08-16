@@ -89,7 +89,7 @@ oinit = function() {
             recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
             OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
         }
-        OANDA.api("/v1/instruments", 'GET', {accountId: acctsArr[0] }, function(x) {
+        OANDA.api("/v1/instruments", 'GET', {accountId: acctsArr[0],fieldStr:"instrument,interestRate,pip,maxTradeUnits" }, function(x) {
             console.log(x);
             instArr = x.instruments.map(function(a) {
                 return a.instrument;
