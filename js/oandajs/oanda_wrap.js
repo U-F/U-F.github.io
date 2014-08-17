@@ -82,6 +82,7 @@ dump = function(a, b, c, d, e) {
 refreshQuotes = function(cb) {
     OANDA.rate.quote(pairArr, function(x) {
         lastquote = x;
+        if (x) {
         oquotes = {};
         x.map(function(a) {
             oquotes[a.instrument] = a
@@ -92,7 +93,7 @@ refreshQuotes = function(cb) {
             }
         }
         cb(x, oquotes);
-    })
+    }})
 }
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
