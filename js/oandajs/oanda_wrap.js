@@ -1,6 +1,7 @@
 //Ext.require('Ext.slider.*');
 scripturl = "///u-f.github.io/js/oandajs/oanda.js";
 globalotrades = {};
+globaloquotes = {};
 ddmenudata = Ext.create('Ext.data.Store', {
     fields: ['abbr', 'name'],
     data: [{
@@ -76,6 +77,15 @@ UIObject = {
 // see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
 // http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
 
+dump = function(a,b,c,d,e){console.log(a,b,c,d,e)}
+
+refreshQuotes= function(cb){                OANDA.rate.quote(pairArr,function(x){
+                    lastquote=x;
+                    oquotes={};
+                    x.map(function(a){oquotes[a.instrument]=a})
+                    cb(x,oquotes);
+                })}
+
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
 }
@@ -94,6 +104,7 @@ oinit = function() {
                 console.log(x);
                 instArr = x.instruments;
                 pairArr = instArr.map(function(x){return (x.instrument)});
+                refreshQuotes(dump);
                 ratesObj = {};
                 for (var ea in instArr) {
                     for (var cur in instArr[ea].interestRate) {
@@ -122,7 +133,7 @@ t2t = function(tobj, cr) {
         ret += set_str(colDef[ea] + cr, tobj[ea])
     }
     return ret;
-}
+} // mod this so coldef is a parm
 otdisplay = function() {
     var rowctr = 1;
     var comm = "";
@@ -136,7 +147,7 @@ otdisplay = function() {
     LCexec(comm);
     console.log(comm);
 }
-omview = function() {OANDA.rate.quote(pairArr,function(x){console.log(x);})}
+omview = function() {refreshQuotes(dump);}
 setupOmenu = function() {
     omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
