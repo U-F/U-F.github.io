@@ -82,7 +82,7 @@ dump = function(a, b, c, d, e) {
 refreshQuotes = function(cb) {
     OANDA.rate.quote(pairArr, function(x) {
         lastquote = x;
-        console.log("WTF",x,"WTF");
+        //console.log("WTF",x,"WTF");
         
         
         oquotes = {};
@@ -116,12 +116,13 @@ oinit = function() {
             recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
             OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
         }
-        OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument", "halted"], function(x) {
+        OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument", "halted","pip","precision"], function(x) {
             console.log(x);
             instArr = x.instruments;
             pairArr = instArr.map(function(x) {
                 return (x.instrument)
             });
+            setupOCmenu(pairArr);
             refreshQuotes(dump);
             ratesObj = {};
             for (var ea in instArr) {
@@ -133,7 +134,7 @@ oinit = function() {
         })
     });
 }
-colDef = {
+colDefTrades = {
     id: "A",
     instrument: "B",
     price: "C",
@@ -143,22 +144,22 @@ colDef = {
     time: "G",
     trailingAmount: "H",
     trailingStop: "I",
-    units: "J"
+    units: "J",curprice:"K"
 }
-t2t = function(tobj, cr) {
+t2t = function(tobj, cr,cd) {
         var ret = "";
         for (var ea in tobj) {
-            ret += set_str(colDef[ea] + cr, tobj[ea])
+            ret += set_str(cd[ea] + cr, tobj[ea])
         }
         return ret;
-    } // mod this so coldef is a parm
+    } 
 otdisplay = function() {
     var rowctr = 1;
     var comm = "";
     for (var ea in globalotrades) {
         for (var trad in globalotrades[ea]) {
             //console.log(globalotrades[ea][trad]);
-            comm += t2t(globalotrades[ea][trad], rowctr);
+            comm += t2t(globalotrades[ea][trad], rowctr,colDefTrades);
             rowctr++;
         }
     }
@@ -168,6 +169,33 @@ otdisplay = function() {
 omview = function() {
     refreshQuotes(dump);
 }
+
+setupOCmenu = function(carr){
+    
+    var my_values;
+    my_values=carr.map(function(x){return [x]});
+    
+    curddmenu = new Ext.form.ComboBox({
+    fieldLabel: 'Number',
+    labelStyle: 'width:50px',
+    width:200,
+    hiddenName: 'number',
+    store: new Ext.data.SimpleStore({
+        fields: ['number'],
+        data : my_values 
+    }),
+    displayField: 'number',
+    typeAhead: true,
+    mode: 'local',
+    triggerAction: 'all',
+    emptyText:'Instruments',
+    selectOnFocus:true
+});
+
+tb.insert(0, curddmenu)
+    
+}
+
 setupOmenu = function() {
     omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
