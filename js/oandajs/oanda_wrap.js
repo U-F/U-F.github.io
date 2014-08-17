@@ -83,19 +83,24 @@ refreshQuotes = function(cb) {
     OANDA.rate.quote(pairArr, function(x) {
         lastquote = x;
         console.log("WTF",x,"WTF");
-        if (x) {
+        
+        
         oquotes = {};
-        /*
-        x.map(function(a) {
+        
+        x.prices.map(function(a) {
             oquotes[a.instrument] = a
         })
         for (var ac in globalotrades) {
             for (var t in globalotrades[ac]) {
-                globalotrades[ac].curprice = globalotrades[ac].side == "buy" ? oquotes[globalotrades[ac].instrument].bid : oquotes[globalotrades[ac].instrument].ask
+                //console.log( oquotes[globalotrades[ac].instrument].bid , oquotes[globalotrades[ac].instrument].ask  ,  globalotrades[ac].side)
+                //console.log(globalotrades[ac][t].instrument,oquotes[globalotrades[ac][t].instrument])
+                if (oquotes[globalotrades[ac][t].instrument]) { globalotrades[ac][t].curprice = globalotrades[ac][t].side == "buy" ? oquotes[globalotrades[ac][t].instrument].bid : oquotes[globalotrades[ac][t].instrument].ask }
+                // may get rid of the if maybe
+                
             }
         }
         cb(x, oquotes);
-    }*/)
+    })
 }
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
