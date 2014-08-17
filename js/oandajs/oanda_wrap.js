@@ -76,45 +76,55 @@ UIObject = {
 };
 // see http://docs.sencha.com/extjs/4.1.3/extjs-build/examples/form/field-types.html    
 // http://try.sencha.com/extjs/4.1.0/docs/Ext.form.field.ComboBox.1/ for other formfield types
-
-dump = function(a,b,c,d,e){console.log(a,b,c,d,e)}
-
-refreshQuotes= function(cb){                OANDA.rate.quote(pairArr,function(x){
-                    lastquote=x;
-                    oquotes={};
-                    x.map(function(a){oquotes[a.instrument]=a})
-                    cb(x,oquotes);
-                })}
-
+dump = function(a, b, c, d, e) {
+    console.log(a, b, c, d, e)
+}
+refreshQuotes = function(cb) {
+    OANDA.rate.quote(pairArr, function(x) {
+        lastquote = x;
+        oquotes = {};
+        x.map(function(a) {
+            oquotes[a.instrument] = a
+        })
+        for (var ac in globalotrades) {
+            for (var t in globalotrades[ac]) {
+                globalotrades[ac].curprice = globalotrades[ac].side == "buy" ? oquotes[globalotrades[ac].instrument].bid : oquotes[globalotrades[ac].instrument].ask
+            }
+        }
+        cb(x, oquotes);
+    })
+}
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
 }
 oinit = function() {
-        OANDA.account.list("", function(a) {
-            acctsObj = a;
-            recvrFuncs = [];
-            acctsArr = acctsObj.accounts.map(function(a) {
-                return a.accountId
-            })
-            for (var idx in acctsArr) {
-                recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
-                OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]); 
-            }
-            OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument","halted"], function(x) {
-                console.log(x);
-                instArr = x.instruments;
-                pairArr = instArr.map(function(x){return (x.instrument)});
-                refreshQuotes(dump);
-                ratesObj = {};
-                for (var ea in instArr) {
-                    for (var cur in instArr[ea].interestRate) {
-                        //console.log(cur, instArr[ea].interestRate[cur]  );
-                        ratesObj[cur] = instArr[ea].interestRate[cur];
-                    }
+    OANDA.account.list("", function(a) {
+        acctsObj = a;
+        recvrFuncs = [];
+        acctsArr = acctsObj.accounts.map(function(a) {
+            return a.accountId
+        })
+        for (var idx in acctsArr) {
+            recvrFuncs.push(eval("WTF=function(x){var thisAcctNo=" + acctsArr[idx] + ";receivedTrades(thisAcctNo,x);console.log(thisAcctNo,x)}")); //
+            OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
+        }
+        OANDA.rate.instruments(acctsArr[0], ["interestRate", "instrument", "halted"], function(x) {
+            console.log(x);
+            instArr = x.instruments;
+            pairArr = instArr.map(function(x) {
+                return (x.instrument)
+            });
+            refreshQuotes(dump);
+            ratesObj = {};
+            for (var ea in instArr) {
+                for (var cur in instArr[ea].interestRate) {
+                    //console.log(cur, instArr[ea].interestRate[cur]  );
+                    ratesObj[cur] = instArr[ea].interestRate[cur];
                 }
-            })
-        });
-    } 
+            }
+        })
+    });
+}
 colDef = {
     id: "A",
     instrument: "B",
@@ -128,12 +138,12 @@ colDef = {
     units: "J"
 }
 t2t = function(tobj, cr) {
-    var ret = "";
-    for (var ea in tobj) {
-        ret += set_str(colDef[ea] + cr, tobj[ea])
-    }
-    return ret;
-} // mod this so coldef is a parm
+        var ret = "";
+        for (var ea in tobj) {
+            ret += set_str(colDef[ea] + cr, tobj[ea])
+        }
+        return ret;
+    } // mod this so coldef is a parm
 otdisplay = function() {
     var rowctr = 1;
     var comm = "";
@@ -147,7 +157,9 @@ otdisplay = function() {
     LCexec(comm);
     console.log(comm);
 }
-omview = function() {refreshQuotes(dump);}
+omview = function() {
+    refreshQuotes(dump);
+}
 setupOmenu = function() {
     omenu = Ext.create('Ext.menu.Menu', {
         id: 'oMenu',
