@@ -82,9 +82,12 @@ dump = function(a, b, c, d, e) {
 
 oo2ohlc= function(o){    return (o.time + "," + o.openBid + "," + o.highBid + "," + o.lowBid + "," + o.closeBid +"\n") }
 
+oo2al= function(o){    return ([+new Date(o.time) , o.openBid , o.highBid , o.lowBid , o.closeBid]) }
+
 
 dumpcandle = function(sym) {
-OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2ohlc).join(""))})
+//OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2ohlc).join(""))})
+OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2al))})
 }
 
 
@@ -263,6 +266,17 @@ displayWin = function(wintitle, itemsObj) {
     top[winname].show();
     return (winname);
 }
+
+    open_cand = function(data_arr,title,external){
+
+            external = (external === undefined) ? false : external;
+            var gv= (external == true) ? window.open("static/support/can/display.html","_blank") : openwin("static/support/can/display.html") ; 
+            extwindows.push({typ:"CDL",wref:gv,title:title,datarr:data_arr})
+    }
+
+
+
+
 if (localStorage.getItem("_otoken") != null) _otoken = localStorage.getItem("_otoken"); // Yes i entirely dislike conditional assignments. Sue me.
 if (typeof _otoken == "undefined" || !validateTok(_otoken)) {
     owinname = displayWin("Oanda access info", UIObject)
