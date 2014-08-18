@@ -52,7 +52,7 @@ UIObject = {
     buttons: [{
         text: 'Reset',
         handler: function() {
-            this.up('form').getForm().reset();
+            alert("do you it yourself")
         }
     }, {
         text: 'Submit',
@@ -79,6 +79,13 @@ UIObject = {
 dump = function(a, b, c, d, e) {
     console.log(a, b, c, d, e)
 }
+
+dumpcandle = function(sym) {
+OANDA.rate.history(sym,{},function(x){console.log(x)})
+}
+
+
+
 refreshQuotes = function(cb) {
     OANDA.rate.quote(pairArr, function(x) {
         lastquote = x;
@@ -176,9 +183,9 @@ setupOCmenu = function(carr){
     my_values=carr.map(function(x){return [x]});
     
     curddmenu = new Ext.form.ComboBox({
-    fieldLabel: 'Number',
+    //fieldLabel: 'Number',
     labelStyle: 'width:50px',
-    width:200,
+    width:100,
     hiddenName: 'number',
     store: new Ext.data.SimpleStore({
         fields: ['number'],
@@ -189,7 +196,13 @@ setupOCmenu = function(carr){
     mode: 'local',
     triggerAction: 'all',
     emptyText:'Instruments',
-    selectOnFocus:true
+    selectOnFocus:true,
+    listeners: {
+        'select': function(obj) {
+            var sym =obj.value;
+dumpcandle(sym);
+}
+    }
 });
 
 tb.insert(0, curddmenu)
