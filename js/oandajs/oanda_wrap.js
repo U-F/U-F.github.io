@@ -87,7 +87,12 @@ oo2al= function(o){    return ([+new Date(o.time) , o.openBid , o.highBid , o.lo
 
 dumpcandle = function(sym) {
 //OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2ohlc).join(""))})
-OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2al))})
+OANDA.rate.history(sym,{},function(x){
+    console.log(x);
+    console.log(x.candles.map(oo2al));
+    open_cand(x.candles.map(oo2al),sym,true);
+    
+    })
 }
 
 
@@ -268,9 +273,8 @@ displayWin = function(wintitle, itemsObj) {
 }
 
     open_cand = function(data_arr,title,external){
-
             external = (external === undefined) ? false : external;
-            var gv= (external == true) ? window.open("static/support/can/display.html","_blank") : openwin("static/support/can/display.html") ; 
+            var gv= (external == true) ? window.open("static/support/can/display.html","_blank") : openwin("static/support/can/display.html",title) ; 
             extwindows.push({typ:"CDL",wref:gv,title:title,datarr:data_arr})
     }
 
