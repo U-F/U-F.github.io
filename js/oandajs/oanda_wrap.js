@@ -80,8 +80,11 @@ dump = function(a, b, c, d, e) {
     console.log(a, b, c, d, e)
 }
 
+oo2ohlc= function(o){    return (o.time + "," + o.openBid + "," + o.highBid + "," + o.lowBid + "," + o.closeBid +"\n") }
+
+
 dumpcandle = function(sym) {
-OANDA.rate.history(sym,{},function(x){console.log(x)})
+OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2ohlc).join(""))})
 }
 
 
@@ -208,6 +211,7 @@ dumpcandle(sym);
 tb.insert(0, curddmenu)
     
 }
+
 
 setupOmenu = function() {
     omenu = Ext.create('Ext.menu.Menu', {
