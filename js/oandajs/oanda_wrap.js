@@ -87,13 +87,23 @@ oo2al= function(o){    return ([+new Date(o.time) , o.openBid , o.highBid , o.lo
 
 dumpcandle = function(sym) {
 //OANDA.rate.history(sym,{},function(x){console.log(x);console.log(x.candles.map(oo2ohlc).join(""))})
-OANDA.rate.history(sym,{count:5000,granularity:"M5"},function(x){
+OANDA.rate.history(sym,{count:5000,granularity:"M15"},function(x){
     console.log(x);
     console.log(x.candles.map(oo2al));
     open_cand(x.candles.map(oo2al),sym,true);
     
     })
+//
+    OANDA.rate.history(sym,{count:5000,granularity:"D1"},function(x){
+    console.log(x);
+    console.log(x.candles.map(oo2al));
+    open_cand(x.candles.map(oo2al),sym,false);
+    
+    })
+    
+    
 }
+
 
 
 
