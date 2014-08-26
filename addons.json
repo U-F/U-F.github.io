@@ -15,7 +15,7 @@
 ,
 {"Name":"R Integration","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"External Editor","URL_ARR":["///U-F.github.io/js/myStartupScript.js"],"Info":"","Dependencies":[]}
+{"Name":"ACE Editor","URL_ARR":["///U-F.github.io/js/myStartupScript.js"],"Info":"","Dependencies":[]}
 ,
 {"Name":"O&A Integration","URL_ARR":["///U-F.github.io/js/oandajs/oanda_wrap.js"],"Info":"","Dependencies":[]}
 ]
