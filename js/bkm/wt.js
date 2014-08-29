@@ -3,7 +3,11 @@ if (localStorage.getItem("wt_integration_sheet_url")==null)  localStorage.setIte
 sheetupdate = function() {
     its=document.querySelectorAll(".item");
     var pkt=[];
-    for (ea in its) {pkt.push({nam:its[ea].querySelector(".name").innerText,ask:its[ea].querySelector(".ask").innerText,bid:its[ea].querySelector(".bid").innerText}); }
+    for (ea in its) {
+        console.log(its[ea]);
+        pkt.push({nam:its[ea].querySelector(".name").innerText,ask:its[ea].querySelector(".ask").innerText,bid:its[ea].querySelector(".bid").innerText}); 
+        
+    }
 
 
     magicsheetwin.postMessage(pkt,"*"); // we could really be sending commands instead... will update once an API is ready
