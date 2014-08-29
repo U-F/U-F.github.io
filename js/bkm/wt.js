@@ -4,9 +4,10 @@ sheetupdate = function() {
     its=document.querySelectorAll(".item");
     var pkt=[];
     for (ea in its) {
+        if (its[ea]){
         console.log(its[ea]);
         pkt.push({nam:its[ea].querySelector(".name").innerText,ask:its[ea].querySelector(".ask").innerText,bid:its[ea].querySelector(".bid").innerText}); 
-        
+        }
     }
 
 
