@@ -1,21 +1,21 @@
 [
-{"Name":"Excel Formulas (FormulaJS)","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
+{"Name":"Excel Formulas (FormulaJS)","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"Technical Analysis (TALib)","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
+{"Name":"Technical Analysis (TALib)","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"Solver (maybe one day)","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
+{"Name":"Solver (maybe one day)","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"Keyboard Shortcuts","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
+{"Name":"Keyboard Shortcuts","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"DropBox Integration","URL_ARR":["///U-F.github.io/js/dropbox/dropbox.js"],"Info":"","Dependencies":[]}
+{"Name":"DropBox Integration","URL_ARR":["https://U-F.github.io/js/dropbox/dropbox.js"],"Info":"","Dependencies":[]}
 ,
-{"Name":"Github Integration","URL_ARR":["///U-F.github.io/js/aes/aes.js","///U-F.github.io/js/github/github-int.js"],"Info":"","Dependencies":[]}
+{"Name":"Github Integration","URL_ARR":["https://U-F.github.io/js/aes/aes.js","https://U-F.github.io/js/github/github-int.js"],"Info":"","Dependencies":[]}
 ,
-{"Name":"Encryption Module","URL_ARR":["///U-F.github.io/js/aes/aes.js"],"Info":"","Dependencies":[]}
+{"Name":"Encryption Module","URL_ARR":["https://U-F.github.io/js/aes/aes.js"],"Info":"","Dependencies":[]}
 ,
-{"Name":"R Integration","URL_ARR":["///U-F.github.io/"],"Info":"","Dependencies":[]}
+{"Name":"R Integration","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
-{"Name":"ACE Editor","URL_ARR":["///U-F.github.io/js/myStartupScript.js"],"Info":"","Dependencies":[]}
+{"Name":"ACE Editor","URL_ARR":["https://U-F.github.io/js/myStartupScript.js"],"Info":"","Dependencies":[]}
 ,
-{"Name":"O&A Integration","URL_ARR":["///U-F.github.io/js/oandajs/oanda_wrap.js"],"Info":"","Dependencies":[]}
+{"Name":"O&A Integration","URL_ARR":["https://U-F.github.io/js/oandajs/oanda_wrap.js"],"Info":"","Dependencies":[]}
 ]
