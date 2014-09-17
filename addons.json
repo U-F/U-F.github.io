@@ -18,4 +18,8 @@
 {"Name":"ACE Editor","URL_ARR":["https://U-F.github.io/js/myStartupScript.js"],"Info":"","Dependencies":[]}
 ,
 {"Name":"O&A Integration","URL_ARR":["https://U-F.github.io/js/oandajs/oanda_wrap.js"],"Info":"","Dependencies":[]}
+,
+{"Name":"BTC TA","URL_ARR":["https://U-F.github.io/js/ta/btc.js"],"Info":"","Dependencies":[]}
+,
+{"Name":"ConvNetJS classification","URL_ARR":["https://U-F.github.io/js/convnet/integrate.js"],"Info":"","Dependencies":[]}
 ]
