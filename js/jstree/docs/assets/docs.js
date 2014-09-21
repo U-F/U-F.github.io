@@ -186,9 +186,6 @@
 				p.append(d);
 			});
 
-			if($('#srch').val().length) {
-				search(decodeURIComponent($.address.parameter('q')));
-			}
 			filter(decodeURIComponent($.address.parameter('f')));
 		});
 	});
