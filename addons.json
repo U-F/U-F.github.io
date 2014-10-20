@@ -22,4 +22,6 @@
 {"Name":"BTC TA","URL_ARR":["https://U-F.github.io/js/ta/btc.js"],"Info":"","Dependencies":[]}
 ,
 {"Name":"ConvNetJS classification","URL_ARR":["https://U-F.github.io/js/convnet/integrate.js"],"Info":"","Dependencies":[]}
+,
+{"Name":"AWS API","URL_ARR":["https://U-F.github.io/js/aws-sdk.js"],"Info":"","Dependencies":[]}
 ]
