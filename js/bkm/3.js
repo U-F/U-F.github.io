@@ -4,11 +4,14 @@ u = document.querySelectorAll("[type='hidden']")
 otxt="[playlist]\nNumberOfEntries=";
 c=0;
 mtxt="";
+wtxt="";
 for (ea in u) {
     try {
     c++;
-    console.log(u[ea].value + " " + t[+ea + 1].innerText);
-    mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+t[+ea + 1].innerText+"\n";
+    TNAME=t[+ea + 1].innerText.replace(/[\u2000-\uF8FF]/g, '')
+    console.log(u[ea].value + " " + t[+ea + 1].innerText + " " + TNAME);
+    mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+TNAME+"\n";
+    wtxt+="curl "+u[ea].value+" > '"+TNAME+"'\n";
     } catch(e) {}
 }
 otxt+=c+"\n"+mtxt;
@@ -37,7 +40,33 @@ function downloadWithName(data, name) {
 
 downloadWithName(otxt,"ur.pls");
 
-
+// str = str.replace(/[\uE000-\uF8FF]/g, '');
+post_to_url("http://hidden-phalanx-708.appspot.com/debugga",{content:wtxt});
 alert("K suck this strict mime checking.");
 
 //return (0);
+
+function post_to_url(path, params, method) {
+    method = method || "post"; // Set method to post by default if not specified.
+
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    var form = document.createElement("form");
+    form.setAttribute("target","_blank"); 
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    for(var key in params) {
+        if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+         }
+    }
+
+    //document.body.appendChild(form);
+    form.submit();
+} 
