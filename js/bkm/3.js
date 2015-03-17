@@ -11,7 +11,7 @@ for (ea in u) {
     TNAME=t[+ea + 1].innerText.replace(/[\u0400-\uF8FF]/g, '')
     console.log(u[ea].value + " " + t[+ea + 1].innerText + " " + TNAME);
     mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+TNAME+"\n";
-    wtxt+="curl '"+u[ea].value+"' > '"+TNAME+"'.mp3\n";
+    wtxt+="curl '"+u[ea].value+"' > '"+TNAME+".mp3'\n";
     } catch(e) {}
 }
 otxt+=c+"\n"+mtxt;
