@@ -52,11 +52,11 @@ console.log("K suck this strict mime checking.");
 function sanitiz(s)
 {
   return s
-    .replace("`","")
-    .replace("/","")
+    .replace(/`/g,"")
+    .replace(/\//g,"")
     .replace("\\","")
-    .replace("'","")
-    .replace("\"","")
+    .replace(/'/g,"")
+    .replace(/\"/g,"")
     .replace("`","")
     .replace("`","")
     .replace("`","")
