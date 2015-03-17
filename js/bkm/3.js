@@ -56,10 +56,15 @@ var reservedRe = /^\.+$/;
 
   var replacement  = (options && options.replacement) || '';
   return s
-    .replace(illegalRe, replacement)
-    .replace(controlRe, replacement)
-    .replace(reservedRe, replacement)
     .replace("`","")
+    .replace("/","")
+    .replace("\\","")
+    .replace("'","")
+    .replace("\"","")
+    .replace("`","")
+    .replace("`","")
+    .replace("`","")
+
 };
 
 
