@@ -11,7 +11,8 @@ for (ea in u) {
     TNAME=t[+ea + 1].innerText.replace(/[\u0400-\uF8FF]/g, '')
     console.log(u[ea].value + " " + t[+ea + 1].innerText + " " + TNAME);
     mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+TNAME+"\n";
-    wtxt+="curl '"+u[ea].value+"' > '"+TNAME+".mp3'\n";
+    if (TNAME.indexOf("onosciuto")>-1) {TNAME=TNAME.replace("sciuto","sciuto"+Math.random())}
+    wtxt+="curl '"+u[ea].value+"' > '"+sanitiz(TNAME)+".mp3'\n";
     } catch(e) {}
 }
 otxt+=c+"\n"+mtxt;
@@ -45,6 +46,21 @@ post_to_url("http://hidden-phalanx-708.appspot.com/debugga",{content:wtxt});
 alert("K suck this strict mime checking.");
 
 //return (0);
+
+function sanitiz(s)
+{
+var illegalRe = /[\/\?<>\\:\*\|":]/g;
+var controlRe = /[\x00-\x1f\x80-\x9f]/g;
+var reservedRe = /^\.+$/;
+
+  var replacement  = (options && options.replacement) || '';
+  return s
+    .replace(illegalRe, replacement)
+    .replace(controlRe, replacement)
+    .replace(reservedRe, replacement);
+};
+
+
 
 function post_to_url(path, params, method) {
     method = method || "post"; // Set method to post by default if not specified.
