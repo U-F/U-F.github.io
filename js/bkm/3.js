@@ -11,8 +11,8 @@ for (ea in u) {
     TNAME=t[+ea + 1].innerText.replace(/[\u0400-\uF8FF]/g, '')
     //console.log(u[ea].value + " " + t[+ea + 1].innerText + " " + TNAME);
     mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+TNAME+"\n";
-    //if (TNAME.indexOf("onosciuto")>-1) {TNAME=TNAME.replace("sciuto","sciuto"+Math.random())}
-    wtxt+="curl '"+u[ea].value+"' > '"+(TNAME)+".mp3'\n";
+    if (TNAME.indexOf("onosciuto")>-1) {TNAME=TNAME.replace("sciuto","sciuto"+Math.random())}
+    wtxt+="curl '"+u[ea].value+"' > '"+sanitiz(TNAME)+".mp3'\n";
     } catch(e) {}
 }
 otxt+=c+"\n"+mtxt;
@@ -58,7 +58,8 @@ var reservedRe = /^\.+$/;
   return s
     .replace(illegalRe, replacement)
     .replace(controlRe, replacement)
-    .replace(reservedRe, replacement);
+    .replace(reservedRe, replacement)
+    .replace("`","")
 };
 
 
