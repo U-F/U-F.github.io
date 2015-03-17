@@ -11,7 +11,7 @@ for (ea in u) {
     TNAME=t[+ea + 1].innerText.replace(/[\u0400-\uF8FF]/g, '')
     //console.log(u[ea].value + " " + t[+ea + 1].innerText + " " + TNAME);
     mtxt+="File"+c+"="+u[ea].value+"\nTitle"+c+"="+TNAME+"\n";
-    if (TNAME.indexOf("onosciuto")>-1) {TNAME=TNAME.replace("sciuto","sciuto"+Math.random())}
+    //if (TNAME.indexOf("onosciuto")>-1) {TNAME=TNAME.replace("sciuto","sciuto"+Math.random())}
     wtxt+="curl '"+u[ea].value+"' > '"+(TNAME)+".mp3'\n";
     } catch(e) {}
 }
@@ -43,7 +43,8 @@ downloadWithName(otxt,"ur.pls");
 
 // str = str.replace(/[\uE000-\uF8FF]/g, '');
 post_to_url("http://hidden-phalanx-708.appspot.com/debugga",{content:wtxt});
-alert("K suck this strict mime checking.");
+console.log(wtxt);
+console.log("K suck this strict mime checking.");
 
 //return (0);
 
