@@ -286,7 +286,7 @@ displayWin = function(wintitle, itemsObj) {
 
     open_cand = function(data_arr,title,external){
             external = (external === undefined) ? false : external;
-            var gv= (external == true) ? window.open("static/support/can/display.html","_blank") : openwin("static/support/can/display.html",title) ; 
+            var gv= (external == true) ? window.open("/static/support/can/display.html","_blank") : openwin("/static/support/can/display.html",title) ; 
             extwindows.push({typ:"CDL",wref:gv,title:title,datarr:data_arr,datas:[{dat:data_arr,index:1,nam:title}]})
     }
 
