@@ -41,7 +41,7 @@ UIObject = {
         name: 'last'
     }, {
         xtype: "combo",
-        fieldLabel: "Text",
+        fieldLabel: "Endpoint",
         name: "combovalue",
         store: ddmenudata,
         hiddenName: "combovalue",
@@ -250,6 +250,8 @@ setupOmenu = function() {
             }
         }]
     });
+    // works on both versions
+    if (typeof tb == "undefined") tb = Ext.getCmp("CENTER").down("toolbar");
     tb.add({
         text: 'OANDA',
         // iconCls: 'bmenu', // <-- icon
