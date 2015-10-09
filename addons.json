@@ -1,4 +1,6 @@
 [
+{"Name":"p5.js","URL_ARR":["https://U-F.github.io/js/p5load.js"],"Info":"TODO: implement autoloading","Dependencies":[],"Autoload":"1"}
+,
 {"Name":"Excel Formulas (FormulaJS)","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
 ,
 {"Name":"Technical Analysis (TALib)","URL_ARR":["https://U-F.github.io/"],"Info":"","Dependencies":[]}
@@ -24,6 +26,4 @@
 {"Name":"ConvNetJS classification","URL_ARR":["https://U-F.github.io/js/convnet/integrate.js"],"Info":"","Dependencies":[]}
 ,
 {"Name":"AWS API","URL_ARR":["https://U-F.github.io/js/aws-sdk.js"],"Info":"","Dependencies":[]}
-,
-{"Name":"p5.js","URL_ARR":["https://U-F.github.io/js/p5load.js"],"Info":"TODO: implement autoloading","Dependencies":[],Autoload:"1"}
 ]
