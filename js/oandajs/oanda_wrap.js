@@ -111,6 +111,8 @@ refreshQuotes = function(cb) {
     OANDA.rate.quote(pairArr, function(x) {
         lastquote = x;
         //console.log("WTF",x,"WTF");
+        
+        
         oquotes = {};
         
         x.prices.map(function(a) {
@@ -131,19 +133,6 @@ refreshQuotes = function(cb) {
 receivedTrades = function(acct, tobj) {
     globalotrades[acct] = tobj.trades;
 }
-receivedHist = function(pair, tobj) {
-    globalhist[pair] = tobj.candles;
-}
-gobbleHistory = function () {
-	var hrecvrFuncs;
-	var ctr=0;
-        for (var idx in pairArr) {
-            hrecvrFuncs.push(eval("WTF=function(x){var thisPair=" + pairArr[idx] + ";receivedHist(thisPair,x);ctr++;console.log(thispair+'done',x,ctr);}")); //
-            //OANDA.trade.list(acctsArr[idx], {}, recvrFuncs[idx]);
-            OANDA.rate.history(sym,{count:5000,granularity:"D"},hrecvrFuncs[idx]);
-        }
-}
-
 oinit = function() {
     OANDA.account.list("", function(a) {
         acctsObj = a;
@@ -259,7 +248,7 @@ setupOmenu = function() {
             handler: function() {
                 alert("Not implemented in this version")
             }
-        },{text:"gobbleHistory",handler:gobbleHistory}]
+        }]
     });
     // works on both versions
     if (typeof tb == "undefined") tb = Ext.getCmp("CENTER").down("toolbar");
