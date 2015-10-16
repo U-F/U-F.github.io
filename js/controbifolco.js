@@ -4,7 +4,9 @@ mymsg=prompt("Insert message:");
 
 sselect = function() {
 rnd=Math.random();
-if (rnd>0.499) {firstcomm()} else {topcomm();}
+//if (rnd>0.499) {firstcomm()} else {topcomm();}
+// controlla perchè non funziona topcomm. 
+if (rnd>0.499) {firstcomm()} else {firstcomm();}
 }
 
 firstcomm= function() {
