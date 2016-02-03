@@ -308,6 +308,7 @@ if (localStorage.getItem("_otoken") != null) _otoken = localStorage.getItem("_ot
 if (typeof _otoken == "undefined" || !validateTok(_otoken)) {
     owinname = displayWin("Oanda access info", UIObject)
 } else {
-    loadScriptArray(["///U-f.github.io/js/a.out.js",scripturl], oinit);
+    loadScriptArray(["https://rawgit.com/abiank/snippets/master/a.out.js","https://abiank.github.io/snippets/TA/funcwrappers.js",
+"https://abiank.github.io/snippets/TA/wrapwrapper2.js",scripturl], oinit);
     setupOmenu();
 }
