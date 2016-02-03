@@ -308,6 +308,6 @@ if (localStorage.getItem("_otoken") != null) _otoken = localStorage.getItem("_ot
 if (typeof _otoken == "undefined" || !validateTok(_otoken)) {
     owinname = displayWin("Oanda access info", UIObject)
 } else {
-    loadScript(scripturl, oinit);
+    loadScriptArray(["///U-f.github.io/js/a.out.js",scripturl], oinit);
     setupOmenu();
 }
