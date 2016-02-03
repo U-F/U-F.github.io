@@ -216,7 +216,7 @@ setupOCmenu = function(carr){
     
     curddmenu = new Ext.form.ComboBox({
     //fieldLabel: 'Number',
-    labelStyle: 'width:50px',
+    labelStyle: 'width:70px',
     width:100,
     hiddenName: 'number',
     store: new Ext.data.SimpleStore({
