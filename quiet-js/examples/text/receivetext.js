@@ -1,7 +1,7 @@
 var TextReceiver = (function() {
-    Quiet.setProfilesPrefix("/");
-    Quiet.setMemoryInitializerPrefix("/");
-    Quiet.setLibfecPrefix("/");
+    Quiet.setProfilesPrefix("https://U-F.github.io/quiet-js/");
+    Quiet.setMemoryInitializerPrefix("https://U-F.github.io/quiet-js/");
+    Quiet.setLibfecPrefix("https://U-F.github.io/quiet-js/");
     var target;
     var content = new ArrayBuffer(0);
     var warningbox;
