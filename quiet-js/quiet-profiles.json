@@ -115,7 +115,7 @@
             "gain": 0.15
         },
         "interpolation": {
-            "samples_per_symbol": 40,
+            "samples_per_symbol": 20,
             "symbol_delay": 4,
             "excess_bandwidth": 0.35
         },
