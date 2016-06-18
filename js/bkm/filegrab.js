@@ -5,6 +5,7 @@ filtra = function(s){
 	if (s.indexOf(".webm")>-1) return 1;
 	if (s.indexOf(".mkv")>-1) return 1;
 	if (s.indexOf(".flv")>-1) return 1;
+	if (s.indexOf(".f4v")>-1) return 1;
 	return 0;
 	}
 
